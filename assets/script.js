@@ -91,3 +91,26 @@ function filterBlog(btn,cat){
   btn.classList.add('active');
   document.querySelectorAll('.blog-post-card').forEach(function(c){c.style.display=(cat==='all'||c.dataset.cat===cat)?'block':'none'});
 }
+
+// window.addEventListener("resize", function () {
+//   const mobMenu = document.getElementById("mobMenu");
+
+//   // agar screen badi ho gayi (desktop)
+//   if (window.innerWidth > 768) {
+//     mobMenu.classList.remove("active"); // ya jo class tum use kar rahe ho
+//   }
+// });
+
+function toggleMob() {
+  document.getElementById("mobMenu").classList.toggle("active");
+}
+
+function closeMob() {
+  document.getElementById("mobMenu").classList.remove("active");
+}
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    closeMob();
+  }
+});
