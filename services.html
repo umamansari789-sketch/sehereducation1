@@ -512,96 +512,182 @@ footer{background:var(--navy-deep);color:rgba(255,255,255,0.7);padding:68px 5% 3
      NAVBAR WITH DROPDOWN SUBMENUS
      =========================================================== -->
 <nav id="mainNav">
-  <div class="nav-inner">
-    <a class="logo-a" href="#" onclick="showMain();return false">
-      <div class="logo-icon">SE</div>
-      <div class="logo-text">Seher Education<span>Your Gateway to Academic Excellence</span></div>
-    </a>
-    <ul class="nav-menu">
-      <li class="nav-item"><a href="#" onclick="showMain();scrollTo('about');return false">About Us</a></li>
-      <li class="nav-item has-drop">
-        <a href="#">Services <span class="arr">▾</span></a>
-        <div class="drop drop-mega">
-          <div class="dm-col-title">What We Offer</div>
-          <a href="#" onclick="openInnerPage('svc-study-abroad');return false"><span class="d-icon">🌍</span>Study Abroad Programs</a>
-          <a href="#" onclick="openInnerPage('svc-diploma');return false"><span class="d-icon">🎓</span>Diploma &amp; Degree Courses</a>
-          <a href="#" onclick="openInnerPage('svc-admission');return false"><span class="d-icon">📝</span>Admission Guidance</a>
-          <a href="#" onclick="openInnerPage('svc-visa');return false"><span class="d-icon">✈️</span>Visa Assistance</a>
-          <a href="#" onclick="openInnerPage('svc-scholarship');return false"><span class="d-icon">💰</span>Scholarship Support</a>
-          <a href="#" onclick="openInnerPage('ielts');return false"><span class="d-icon">📚</span>IELTS / Test Prep</a>
-          <a href="#" onclick="openInnerPage('svc-sop');return false"><span class="d-icon">✍️</span>SOP &amp; LOR Writing</a>
-          <a href="#" onclick="openInnerPage('svc-profile');return false"><span class="d-icon">🏛️</span>Profile Building</a>
-        </div>
-      </li>
-      <li class="nav-item has-drop">
-        <a href="#">Destinations <span class="arr">▾</span></a>
-        <div class="drop">
-          <a href="#" onclick="openInnerPage('uk');return false"><span class="d-icon">🇬🇧</span>Study in UK</a>
-          <a href="#" onclick="openInnerPage('canada');return false"><span class="d-icon">🇨🇦</span>Study in Canada</a>
-          <a href="#" onclick="openInnerPage('australia');return false"><span class="d-icon">🇦🇺</span>Study in Australia</a>
-          <a href="#" onclick="openInnerPage('usa');return false"><span class="d-icon">🇺🇸</span>Study in USA</a>
-          <a href="#" onclick="openInnerPage('germany');return false"><span class="d-icon">🇩🇪</span>Study in Germany</a>
-          <a href="#" onclick="openInnerPage('nz');return false"><span class="d-icon">🇳🇿</span>Study in New Zealand</a>
-          <a href="#" onclick="openInnerPage('ireland');return false"><span class="d-icon">🇮🇪</span>Study in Ireland</a>
-        </div>
-      </li>
-      <li class="nav-item has-drop">
-        <a href="#">Courses <span class="arr">▾</span></a>
-        <div class="drop">
-          <a href="#" onclick="showMain();scrollTo('courses');return false"><span class="d-icon">💼</span>MBA / Business</a>
-          <a href="#" onclick="showMain();scrollTo('courses');return false"><span class="d-icon">💻</span>Computer Science</a>
-          <a href="#" onclick="showMain();scrollTo('courses');return false"><span class="d-icon">⚙️</span>Engineering</a>
-          <a href="#" onclick="showMain();scrollTo('courses');return false"><span class="d-icon">🏥</span>Healthcare / Nursing</a>
-          <a href="#" onclick="showMain();scrollTo('courses');return false"><span class="d-icon">⚖️</span>Law</a>
-          <a href="#" onclick="showMain();scrollTo('courses');return false"><span class="d-icon">🎨</span>Creative Arts</a>
-        </div>
-      </li>
-      <li class="nav-item has-drop">
-        <a href="#">Test Prep <span class="arr">▾</span></a>
-        <div class="drop">
-          <a href="#" onclick="openInnerPage('ielts');return false"><span class="d-icon">📋</span>IELTS Coaching</a>
-          <a href="#" onclick="openInnerPage('ielts');return false"><span class="d-icon">🗣️</span>TOEFL Coaching</a>
-          <a href="#" onclick="openInnerPage('ielts');return false"><span class="d-icon">📐</span>GRE Coaching</a>
-          <a href="#" onclick="openInnerPage('ielts');return false"><span class="d-icon">📊</span>GMAT Coaching</a>
-          <a href="#" onclick="openInnerPage('ielts');return false"><span class="d-icon">🎓</span>SAT Coaching</a>
-        </div>
-      </li>
-      <li class="nav-item"><a href="#" onclick="openInnerPage('blog-listing');return false">Blog</a></li>
-      <li class="nav-item"><a href="#" onclick="showMain();scrollTo('contact');return false">Contact</a></li>
-      <li class="nav-item"><a class="nav-cta-btn" href="#" onclick="showMain();scrollTo('counsellors');return false">📅 Book Free Session</a></li>
-    </ul>
-    <button class="hamburger" onclick="toggleMob()" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-  <div class="mob-menu" id="mobMenu">
-    <div class="mob-item"><a href="#" onclick="showMain();scrollTo('about');closeMob();return false">About Us</a></div>
-    <div class="mob-item"><a href="#" onclick="toggleSub(this)">Services <span class="arr">▾</span></a>
-      <div class="mob-sub">
-        <a href="#" onclick="openInnerPage('svc-study-abroad');closeMob();return false">Study Abroad Programs</a>
-        <a href="#" onclick="openInnerPage('svc-admission');closeMob();return false">Admission Guidance</a>
-        <a href="#" onclick="openInnerPage('svc-visa');closeMob();return false">Visa Assistance</a>
-        <a href="#" onclick="openInnerPage('svc-scholarship');closeMob();return false">Scholarship Support</a>
-        <a href="#" onclick="openInnerPage('ielts');closeMob();return false">IELTS / Test Prep</a>
-        <a href="#" onclick="openInnerPage('svc-sop');closeMob();return false">SOP &amp; LOR Writing</a>
-        <a href="#" onclick="openInnerPage('svc-profile');closeMob();return false">Profile Building</a>
+      <div class="nav-inner">
+        <a class="logo-a" href="index.html">
+          <img src="assets/images/logo.png" alt="logo" width="240" />
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html#about">About Us</a>
+          </li>
+          <li class="nav-item has-drop">
+            <a href="#">Services <span class="arr">▾</span></a>
+            <div class="drop drop-mega">
+              <div class="dm-col-title">What We Offer</div>
+              <a href="abroad.html"
+                ><span class="d-icon">🌍</span>Study Abroad Programs</a
+              >
+              <a href="diploma.html"
+                ><span class="d-icon">🎓</span>Diploma &amp; Degree Courses</a
+              >
+              <a href="admission.html"
+                ><span class="d-icon">📝</span>Admission Guidance</a
+              >
+              <a href="visa.html"
+                ><span class="d-icon">✈️</span>Visa Assistance</a
+              >
+              <a href="scholarship.html"
+                ><span class="d-icon">💰</span>Scholarship Support</a
+              >
+              <a href="ielts.html"
+                ><span class="d-icon">📚</span>IELTS / Test Prep</a
+              >
+              <a href="sop.html"
+                ><span class="d-icon">✍️</span>SOP &amp; LOR Writing</a
+              >
+              <a href="profile.html"
+                ><span class="d-icon">🏛️</span>Profile Building</a
+              >
+            </div>
+          </li>
+          <li class="nav-item has-drop">
+            <a href="#">Destinations <span class="arr">▾</span></a>
+            <div class="drop">
+              <a href="uk.html"><span class="d-icon">🇬🇧</span>Study in UK</a>
+              <a href="canada.html"
+                ><span class="d-icon">🇨🇦</span>Study in Canada</a
+              >
+              <a href="australia.html"
+                ><span class="d-icon">🇦🇺</span>Study in Australia</a
+              >
+              <a href="usa.html"><span class="d-icon">🇺🇸</span>Study in USA</a>
+              <a href="germany.html"
+                ><span class="d-icon">🇩🇪</span>Study in Germany</a
+              >
+              <a href="nz.html"
+                ><span class="d-icon">🇳🇿</span>Study in New Zealand</a
+              >
+              <a href="ireland.html"
+                ><span class="d-icon">🇮🇪</span>Study in Ireland</a
+              >
+            </div>
+          </li>
+          <li class="nav-item has-drop">
+            <a href="#">Courses <span class="arr">▾</span></a>
+            <div class="drop">
+              <a href="mba-business.html"><span class="d-icon">💼</span>MBA / Business</a>
+              <a href="computerscience.html"><span class="d-icon">💻</span>Computer Science</a>
+              <a href="Engineering.html"><span class="d-icon">⚙️</span>Engineering</a>
+              <a href="helthcare.html"><span class="d-icon">🏥</span>Healthcare / Nursing</a>
+              <a href="law.html"><span class="d-icon">⚖️</span>Law</a>
+              <a href="creative.html"><span class="d-icon">🎨</span>Creative Arts</a>
+            </div>
+          </li>
+          <li class="nav-item has-drop">
+            <a href="#">Test Prep <span class="arr">▾</span></a>
+            <div class="drop">
+              <a href="#"><span class="d-icon">📋</span>IELTS Coaching</a>
+              <a href="#"><span class="d-icon">🗣️</span>TOEFL Coaching</a>
+              <a href="#"><span class="d-icon">📐</span>GRE Coaching</a>
+              <a href="#"><span class="d-icon">📊</span>GMAT Coaching</a>
+              <a href="#"><span class="d-icon">🎓</span>SAT Coaching</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-cta-btn" href="#">📅 Book Free Session</a>
+          </li>
+        </ul>
+        <button class="hamburger" onclick="toggleMob()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </div>
-    <div class="mob-item"><a href="#" onclick="toggleSub(this)">Destinations <span class="arr">▾</span></a>
-      <div class="mob-sub">
-        <a href="#" onclick="openInnerPage('uk');closeMob();return false">🇬🇧 Study in UK</a>
-        <a href="#" onclick="openInnerPage('canada');closeMob();return false">🇨🇦 Study in Canada</a>
-        <a href="#" onclick="openInnerPage('australia');closeMob();return false">🇦🇺 Study in Australia</a>
-        <a href="#" onclick="openInnerPage('usa');closeMob();return false">🇺🇸 Study in USA</a>
-        <a href="#" onclick="openInnerPage('germany');closeMob();return false">🇩🇪 Study in Germany</a>
-        <a href="#" onclick="openInnerPage('nz');closeMob();return false">🇳🇿 Study in New Zealand</a>
-      </div>
-    </div>
-    <div class="mob-item"><a href="#" onclick="showMain();scrollTo('courses');closeMob();return false">Courses</a></div>
-    <div class="mob-item"><a href="#" onclick="openInnerPage('ielts');closeMob();return false">Test Prep</a></div>
-    <div class="mob-item"><a href="#" onclick="openInnerPage('blog-listing');closeMob();return false">Blog</a></div>
-    <div class="mob-item"><a href="#" onclick="showMain();scrollTo('contact');closeMob();return false">Contact</a></div>
-    <div class="mob-item"><a href="#" onclick="showMain();scrollTo('counsellors');closeMob();return false" style="color:var(--gold-light);font-weight:700">📅 Book Free Counselling</a></div>
+      <div class="mob-menu" id="mobMenu">
+        <div class="mob-item">
+          <a
+            href="#"
+            onclick="
+              scrollToSection('about');
+              closeMob();
+              return false;
+            "
+            >About Us</a
+          >
+        </div>
+        <div class="mob-item">
+          <a href="#" onclick="toggleSub(this)"
+            >Services <span class="arr">▾</span></a
+          >
+          <div class="mob-sub">
+            <a href="abroad.html">Study Abroad Programs</a>
+            <a href="admission.html">Admission Guidance</a>
+            <a href="visa.html">Visa Assistance</a>
+            <a href="scholarship.html">Scholarship Support</a>
+            <a href="ielts.html">IELTS / Test Prep</a>
+          </div>
+        </div>
+        <div class="mob-item">
+          <a href="#" onclick="toggleSub(this)"
+            >Destinations <span class="arr">▾</span></a
+          >
+          <div class="mob-sub">
+            <a href="uk.html">🇬🇧 Study in UK</a>
+            <a href="canada.html">🇨🇦 Study in Canada</a>
+            <a href="australia.html">🇦🇺 Study in Australia</a>
+            <a href="usa.html">🇺🇸 Study in USA</a>
+            <a href="germany.html">🇩🇪 Study in Germany</a>
+            <a href="nz.html">🇳🇿 Study in New Zealand</a>
+          </div>
+        </div>
+        <div class="mob-item">
+  <a href="#" onclick="toggleSub(this)">
+    Courses <span class="arr">▾</span>
+  </a>
+  <div class="mob-sub">
+    <a href="mba-business.html">💼 MBA / Business</a>
+    <a href="computerscience.html">💻 Computer Science</a>
+    <a href="Engineering.html">⚙️ Engineering</a>
+    <a href="helthcare.html">🏥 Healthcare / Nursing</a>
+    <a href="law.html">⚖️ Law</a>
+    <a href="creative.html">🎨 Creative Arts</a>
   </div>
-</nav>
+</div>
+        <div class="mob-item">
+          <a
+            href="#"
+            onclick="
+              window.location = 'ielts.html';
+              closeMob();
+              return false;
+            "
+            >Test Prep</a
+          >
+        </div>
+        <div class="mob-item">
+          <a href="blog.html">Blog</a>
+        </div>
+        <div class="mob-item">
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="mob-item">
+          <a
+            href="#"
+            onclick="
+              scrollToSection('counsellors');
+              closeMob();
+              return false;
+            "
+            style="color: var(--gold-light); font-weight: 700"
+            >📅 Book Free Counselling</a
+          >
+        </div>
+      </div>
+    </nav>
 
 <!-- ===========================================================
      MAIN SITE CONTENT

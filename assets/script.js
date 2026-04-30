@@ -114,3 +114,85 @@ window.addEventListener("resize", () => {
     closeMob();
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const links = document.querySelectorAll(".nav-menu a");
+  const currentPage = window.location.pathname.split("/").pop();
+
+  links.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Desktop menu
+  const navLinks = document.querySelectorAll(".nav-menu a");
+
+  navLinks.forEach(link => {
+    let href = link.getAttribute("href");
+
+    // sirf file links check karo (ignore #)
+    if (href && !href.startsWith("#")) {
+      if (href === currentPage) {
+        link.classList.add("active");
+      }
+    }
+  });
+
+  // Mobile menu
+  const mobLinks = document.querySelectorAll(".mob-menu a");
+
+  mobLinks.forEach(link => {
+    let href = link.getAttribute("href");
+
+    if (href && !href.startsWith("#")) {
+      if (href === currentPage) {
+        link.classList.add("active");
+      }
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const currentPage = window.location.pathname.split("/").pop();
+
+  const navItems = document.querySelectorAll(".nav-item");
+
+  navItems.forEach(item => {
+    const links = item.querySelectorAll("a");
+
+    links.forEach(link => {
+      const href = link.getAttribute("href");
+
+      if (!href || href === "#") return;
+
+      // agar child link match kare
+      if (href === currentPage) {
+        link.classList.add("active");
+
+        // 🔥 parent nav-item ko bhi active karo
+        item.classList.add("active");
+      }
+    });
+  });
+
+  // Mobile menu
+  const mobLinks = document.querySelectorAll(".mob-menu a");
+
+  mobLinks.forEach(link => {
+    const href = link.getAttribute("href");
+
+    if (!href || href === "#") return;
+
+    if (href === currentPage) {
+      link.classList.add("active");
+    }
+  });
+});

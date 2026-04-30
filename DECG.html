@@ -151,12 +151,12 @@ body {
           <li class="nav-item has-drop">
             <a href="#">Courses <span class="arr">▾</span></a>
             <div class="drop">
-              <a href="#"><span class="d-icon">💼</span>MBA / Business</a>
-              <a href="#"><span class="d-icon">💻</span>Computer Science</a>
-              <a href="#"><span class="d-icon">⚙️</span>Engineering</a>
-              <a href="#"><span class="d-icon">🏥</span>Healthcare / Nursing</a>
-              <a href="#"><span class="d-icon">⚖️</span>Law</a>
-              <a href="#"><span class="d-icon">🎨</span>Creative Arts</a>
+              <a href="mba-business.html"><span class="d-icon">💼</span>MBA / Business</a>
+              <a href="computerscience.html"><span class="d-icon">💻</span>Computer Science</a>
+              <a href="Engineering.html"><span class="d-icon">⚙️</span>Engineering</a>
+              <a href="helthcare.html"><span class="d-icon">🏥</span>Healthcare / Nursing</a>
+              <a href="law.html"><span class="d-icon">⚖️</span>Law</a>
+              <a href="creative.html"><span class="d-icon">🎨</span>Creative Arts</a>
             </div>
           </li>
           <li class="nav-item has-drop">
@@ -221,16 +221,18 @@ body {
           </div>
         </div>
         <div class="mob-item">
-          <a
-            href="#"
-            onclick="
-              scrollToSection('courses');
-              closeMob();
-              return false;
-            "
-            >Courses</a
-          >
-        </div>
+  <a href="#" onclick="toggleSub(this)">
+    Courses <span class="arr">▾</span>
+  </a>
+  <div class="mob-sub">
+    <a href="mba-business.html">💼 MBA / Business</a>
+    <a href="computerscience.html">💻 Computer Science</a>
+    <a href="Engineering.html">⚙️ Engineering</a>
+    <a href="helthcare.html">🏥 Healthcare / Nursing</a>
+    <a href="law.html">⚖️ Law</a>
+    <a href="creative.html">🎨 Creative Arts</a>
+  </div>
+</div>
         <div class="mob-item">
           <a
             href="#"
