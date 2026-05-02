@@ -4059,23 +4059,12 @@ tbody tr:hover {
     border-radius: 20px;
     border: 1px solid var(--border);
     padding: 6px;
-
-}
-.uzbek{
-  grid-template-columns: 1fr 1fr;
-              gap: 40px;
-              margin-bottom: 48px;
-              width: 350px;
 }
   
 }
 
 
-.uzbek{
-  grid-template-columns: 1fr 1fr;
-              gap: 40px;
-              margin-bottom: 48px;
-}
+
 
 
 
