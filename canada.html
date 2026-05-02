@@ -36,7 +36,7 @@
             <a href="index.html#about">About Us</a>
           </li>
           <li class="nav-item has-drop">
-            <a href="#">Services <span class="arr">▾</span></a>
+            <a href="#">Services <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a>
             <div class="drop drop-mega">
               <!-- <div class="dm-col-title"></div> -->
               <a href="abroad.html"
@@ -64,7 +64,7 @@
             </div>
           </li>
           <li class="nav-item has-drop">
-            <a href="#">Destinations <span class="arr">▾</span></a>
+            <a href="#">Destinations <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a>
             <div class="drop">
               <a href="uk.html"
                 ><span class="d-icon"></span>Study in Uzbekistan</a
@@ -88,23 +88,23 @@
             </div>
           </li>
           <li class="nav-item has-drop">
-            <a href="#">Courses <span class="arr">▾</span></a>
+            <a href="#">Courses <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a>
             <div class="drop">
               <a href="mba-business.html"
-                ><span class="d-icon">💼</span>MBA / Business</a
+                ><span class="d-icon"></span>MBA / Business</a
               >
               <a href="computerscience.html"
-                ><span class="d-icon">💻</span>Computer Science</a
+                ><span class="d-icon"></span>Computer Science</a
               >
               <a href="Engineering.html"
-                ><span class="d-icon">⚙️</span>Engineering</a
+                ><span class="d-icon"></span>Engineering</a
               >
               <a href="helthcare.html"
-                ><span class="d-icon">🏥</span>Healthcare / Nursing</a
+                ><span class="d-icon"></span>Healthcare / Nursing</a
               >
-              <a href="law.html"><span class="d-icon">⚖️</span>Law</a>
+              <a href="law.html"><span class="d-icon"></span>Law</a>
               <a href="creative.html"
-                ><span class="d-icon">🎨</span>Creative Arts</a
+                ><span class="d-icon"></span>Creative Arts</a
               >
             </div>
           </li>
@@ -125,7 +125,7 @@
             <a href="contact.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-cta-btn" href="#">📅 Book Free Session</a>
+            <a class="nav-cta-btn" href="contact.html">Book Free Session</a>
           </li>
         </ul>
         <button class="hamburger" onclick="toggleMob()" aria-label="Menu">
@@ -135,18 +135,18 @@
       <div class="mob-menu" id="mobMenu">
         <div class="mob-item">
           <a
-            href="#"
+            href="index.html#about"
             onclick="
               scrollToSection('about');
               closeMob();
-              return false;
+              
             "
             >About Us</a
           >
         </div>
         <div class="mob-item">
           <a href="#" onclick="toggleSub(this)"
-            >Services <span class="arr">▾</span></a
+            >Services <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a
           >
           <div class="mob-sub">
             <a href="abroad.html">Study MBBS Programs in India</a>
@@ -158,7 +158,7 @@
         </div>
         <div class="mob-item">
           <a href="#" onclick="toggleSub(this)"
-            >Destinations <span class="arr">▾</span></a
+            >Destinations <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a
           >
           <div class="mob-sub">
             <a href="uk.html">Study in Uzbekistan</a>
@@ -171,15 +171,15 @@
         </div>
         <div class="mob-item">
           <a href="#" onclick="toggleSub(this)">
-            Courses <span class="arr">▾</span>
+            Courses <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span>
           </a>
           <div class="mob-sub">
-            <a href="mba-business.html">💼 MBA / Business</a>
-            <a href="computerscience.html">💻 Computer Science</a>
-            <a href="Engineering.html">⚙️ Engineering</a>
-            <a href="helthcare.html">🏥 Healthcare / Nursing</a>
-            <a href="law.html">⚖️ Law</a>
-            <a href="creative.html">🎨 Creative Arts</a>
+            <a href="mba-business.html"> MBA / Business</a>
+            <a href="computerscience.html"> Computer Science</a>
+            <a href="Engineering.html"> Engineering</a>
+            <a href="helthcare.html"> Healthcare / Nursing</a>
+            <a href="law.html"> Law</a>
+            <a href="creative.html"> Creative Arts</a>
           </div>
         </div>
         <!-- <div class="mob-item">
@@ -201,14 +201,14 @@
         </div>
         <div class="mob-item">
           <a
-            href="#"
+            href="contact.html"
             onclick="
               scrollToSection('counsellors');
               closeMob();
               return false;
             "
             style="color: var(--gold-light); font-weight: 700"
-            >📅 Book Free Counselling</a
+            >Book Free Counselling</a
           >
         </div>
       </div>
@@ -216,9 +216,7 @@
 
     
 
-    <div style="min-height: 100vh; padding-top: 72px">
-      <div class="inner-page active" id="page-uk">
-        <div class="inner-hero c1">
+    <div class="inner-hero c1">
           <div class="breadcrumb">
             <a href="#" href="index.html">Home</a> › <span>Destinations</span> ›
             <span>Kazakhstan </span>
@@ -229,7 +227,10 @@
             opportunities
           </p>
         </div>
-        <div style="max-width: 1320px; margin: 0 auto; padding: 0 5%">
+    <div style="min-height: 100vh; padding-top: 72px;">
+      <div class="inner-page active" id="page-uk">
+        
+        <div style="max-width: 1320px; margin: 0 auto; padding: 0 5%; ">
           <a class="back-home" href="#" href="index.html">← Back to Home</a>
           <div
             style="
@@ -320,10 +321,10 @@
               href="index.html#counsellors"
               style="margin-right: 14px"
             >
-              📅 Book Free Kazakhstan Counselling
+               Book Free Kazakhstan Counselling
             </button>
             <button class="btn-navy" href="index.html#contact">
-              ✉️ Send Enquiry
+               Send Enquiry
             </button>
           </div>
         </div>
@@ -517,7 +518,7 @@
     <div class="popup-bg" id="popupBg" onclick="bgClick(event)">
       <div class="popup-box">
         <button class="popup-close-x" onclick="closePopup()">✕</button>
-        <span class="popup-gift">🎁</span>
+        <span class="popup-gift"></span>
         <h2>Get Free Expert Counselling</h2>
         <p>
           Leave your details and our certified counsellors will reach out within
@@ -557,7 +558,7 @@
             Get My Free Counselling →
           </button>
           <p class="popup-trust">
-            🔒 Your information is 100% safe. No spam, ever.
+             Your information is 100% safe. No spam, ever.
           </p>
         </div>
         <div class="success-box" id="popupSuccess">

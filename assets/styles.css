@@ -2508,8 +2508,10 @@ button.btn-gold-1 {
   background: linear-gradient(135deg, var(--navy-deep), var(--navy-mid));
   padding: 60px 0;
   text-align: center;
-  margin-bottom: 60px;
-  border-radius: 0 0 32px 32px;
+  margin-bottom: -150px;
+      margin-top: 73px;
+  
+  /* border-radius: 0 0 32px 32px; */
 }
 .b1{
   background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220816/pngtree-3d-render-of-wooden-students-with-globe-and-cap-for-study-abroad-banner-photo-image_47821910.jpg);
@@ -2542,6 +2544,8 @@ button.btn-gold-1 {
 
 .c8{
   background-image: url(https://img.freepik.com/free-photo/technology-circle-blue-background-digital-transformation-concept_53876-124682.jpg?semt=ais_hybrid&w=740&q=80);
+  margin-bottom: -145px;
+  
 }
 
 
@@ -3374,7 +3378,7 @@ button.btn-gold-1 {
 
 .nav-menu a.active,
 .mob-menu a.active {
-  color: var(--gold) !important;
+  /* color: var(--gold) !important; */
   font-weight: 700;
 }
 
@@ -3418,7 +3422,7 @@ button.btn-gold-1 {
 /* SECTION */
 .mba-section {
   padding: 80px 5%;
-  background: linear-gradient(135deg, #1e1b4b, #0f172a);
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 55%, var(--navy-mid) 100%);;
   color: #fff;
   font-family: 'DM Sans', sans-serif;
       margin-top: -27px;
@@ -4063,6 +4067,9 @@ tbody tr:hover {
   
 }
 
+.inner-hero.b1 {
+    margin-bottom: 60px;
+}
 
 
 
