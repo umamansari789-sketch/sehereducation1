@@ -3974,7 +3974,7 @@ thead {
 
 th, td {
   padding: 12px 15px;
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid #ddd;
   font-size: 14px;
 }
@@ -3993,6 +3993,7 @@ tbody tr:hover {
   th, td {
     font-size: 12px;
     padding: 10px;
+            text-align: left;
   }
 
   .uzbek-section h2 {
@@ -4035,6 +4036,13 @@ tbody tr:hover {
   transition: 0.3s ease;
 }
 
+.uzbe{
+    background: var(--off-white);
+                border-radius: 20px;
+                padding: 30px;
+                border: 1px solid var(--border);
+  }
+
 /* 📱 Mobile View Fix */
 @media (max-width: 600px) {
   .logo-grid {
@@ -4046,4 +4054,14 @@ tbody tr:hover {
     max-width: none; /* IMPORTANT: remove restriction */
     margin: auto;
   }
+  .uzbe {
+    background: var(--off-white);
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    padding: 6px;
 }
+  
+}
+
+
+
