@@ -29,6 +29,8 @@
     />
   </head>
   <body>
+
+    
     <!-- NAVBAR WITH DROPDOWN SUBMENUS -->
 
     <nav id="mainNav">
@@ -40,38 +42,29 @@
           <li class="nav-item">
             <a href="index.html#about">About Us</a>
           </li>
+          
           <li class="nav-item has-drop">
             <a href="#">Services <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a>
-            <div class="drop drop-mega">
-              <!-- <div class="dm-col-title"></div> -->
-              <a href="abroad.html"
-                ><span class="d-icon"></span>Study MBBS Programs in India</a
-              >
-              <!-- <a href="diploma.html"
-                ><span class="d-icon">🎓</span>Diploma &amp; Degree Courses</a
-              >
-              <a href="admission.html"
-                ><span class="d-icon">📝</span>Admission Guidance</a
-              > -->
-              <!-- <a href="visa.html"
-                ><span class="d-icon">✈️</span>Visa Assistance</a
-              > -->
-              <!-- <a href="scholarship.html"
-                ><span class="d-icon">💰</span>Scholarship Support</a
-              >
-              
-              <a href="sop.html"
-                ><span class="d-icon">✍️</span>SOP &amp; LOR Writing</a
-              >
-              <a href="profile.html"
-                ><span class="d-icon">🏛️</span>Profile Building</a
-              > -->
+            
+              <div class="drop">
+              <a href="mba-business.html"><span class="d-icon"></span>MBA / Business</a>
+              <a href="computerscience.html"><span class="d-icon"></span>Computer Science</a>
+              <a href="Engineering.html"><span class="d-icon"></span>Engineering</a>
+              <a href="helthcare.html"><span class="d-icon"></span>Healthcare / Nursing</a>
+              <a href="law.html"><span class="d-icon"></span>Law</a>
+              <a href="creative.html"><span class="d-icon"></span>Creative Arts</a>
             </div>
+              
+            
           </li>
           <li class="nav-item has-drop">
             <a href="#">Destinations <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a>
             <div class="drop">
+              <a href="abroad.html"><span class="d-icon"></span>Study in India 
+</a>
+              <a href="#"><span class="d-icon"></span>Study in Bangladesh </a>
               <a href="uk.html"><span class="d-icon"></span>Study in Uzbekistan</a>
+              
               <a href="canada.html"
                 ><span class="d-icon"></span>Study in Kazakhstan</a
               >
@@ -93,12 +86,11 @@
           <li class="nav-item has-drop">
             <a href="#">Courses <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a>
             <div class="drop">
-              <a href="mba-business.html"><span class="d-icon"></span>MBA / Business</a>
-              <a href="computerscience.html"><span class="d-icon"></span>Computer Science</a>
-              <a href="Engineering.html"><span class="d-icon"></span>Engineering</a>
-              <a href="helthcare.html"><span class="d-icon"></span>Healthcare / Nursing</a>
-              <a href="law.html"><span class="d-icon"></span>Law</a>
-              <a href="creative.html"><span class="d-icon"></span>Creative Arts</a>
+              <a href="assets/UG_Courses_India.pdf" target="_blank"><span class="d-icon"></span>Undergraduate</a>
+              <a href="assets/PG and doctorate section.pdf" target="_blank" ><span class="d-icon"></span>postgraduate</a>
+              <a href="#" target="_blank" ><span class="d-icon"></span>Doctorate 
+</a>
+              
             </div>
           </li>
           <!-- <li class="nav-item has-drop">
@@ -126,85 +118,71 @@
         </button>
       </div>
       <div class="mob-menu" id="mobMenu">
-        <div class="mob-item">
-          <a
-            href="index.html#about"
-            onclick="
-              scrollToSection('about');
-              closeMob();
-              
-            "
-            >About Us</a
-          >
-        </div>
-        <div class="mob-item">
-          <a href="#" onclick="toggleSub(this)"
-            >Services <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a
-          >
-          <div class="mob-sub">
-            <a href="abroad.html">Study MBBS Programs in India</a>
-            <!-- <a href="admission.html">Admission Guidance</a> -->
-            <!-- <a href="visa.html">Visa Assistance</a> -->
-            <!-- <a href="scholarship.html">Scholarship Support</a> -->
-            <!-- <a href="ielts.html">IELTS / Test Prep</a> -->
-          </div>
-        </div>
-        <div class="mob-item">
-          <a href="#" onclick="toggleSub(this)"
-            >Destinations <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span></a
-          >
-          <div class="mob-sub">
-            <a href="uk.html">Study in Uzbekistan</a>
-            <a href="canada.html">Study in Kazakhstan</a>
-            <a href="australia.html">Study in Georgia</a>
-            <a href="usa.html">Study in Egypt</a>
-            <!-- <a href="germany.html">🇩🇪 Study in Germany</a> -->
-            <!-- <a href="nz.html">🇳🇿 Study in New Zealand</a> -->
-          </div>
-        </div>
-        <div class="mob-item">
-  <a href="#" onclick="toggleSub(this)">
-    Courses <span class="arr"><i class="fa-solid fa-caret-down" style="color: white; "></i></span>
-  </a>
-  <div class="mob-sub">
-    <a href="mba-business.html"> MBA / Business</a>
-    <a href="computerscience.html"> Computer Science</a>
-    <a href="Engineering.html"> Engineering</a>
-    <a href="helthcare.html"> Healthcare / Nursing</a>
-    <a href="law.html"> Law</a>
-    <a href="creative.html"> Creative Arts</a>
+
+  <div class="mob-item">
+    <a href="index.html#about" onclick="closeMob()">About Us</a>
   </div>
+
+  <!-- Services -->
+  <div class="mob-item">
+    <a href="#" onclick="toggleSub(this)">
+      Services <span class="arr"><i class="fa-solid fa-caret-down" style="color: white;"></i></span>
+    </a>
+    <div class="mob-sub">
+      <a href="mba-business.html">MBA / Business</a>
+      <a href="computerscience.html">Computer Science</a>
+      <a href="Engineering.html">Engineering</a>
+      <a href="helthcare.html">Healthcare / Nursing</a>
+      <a href="law.html">Law</a>
+      <a href="creative.html">Creative Arts</a>
+    </div>
+  </div>
+
+  <!-- Destinations -->
+  <div class="mob-item">
+    <a href="#" onclick="toggleSub(this)">
+      Destinations <span class="arr"><i class="fa-solid fa-caret-down" style="color: white;"></i></span>
+    </a>
+    <div class="mob-sub">
+      <a href="abroad.html">Study in India</a>
+      <a href="#">Study in Bangladesh</a>
+      <a href="uk.html">Study in Uzbekistan</a>
+      <a href="canada.html">Study in Kazakhstan</a>
+      <a href="australia.html">Study in Georgia</a>
+      <a href="usa.html">Study in Egypt</a>
+    </div>
+  </div>
+
+  <!-- Courses (PDF Links same as desktop) -->
+  <div class="mob-item">
+    <a href="#" onclick="toggleSub(this)">
+      Courses <span class="arr"><i class="fa-solid fa-caret-down" style="color: white;"></i></span>
+    </a>
+    <div class="mob-sub">
+      <a href="assets/UG_Courses_India.pdf" target="_blank">Undergraduate</a>
+      <a href="assets/PG and doctorate section.pdf" target="_blank">Postgraduate</a>
+      <a href="#" target="_blank">Doctorate</a>
+    </div>
+  </div>
+
+  <!-- Blog -->
+  <div class="mob-item">
+    <a href="blog.html">Blog</a>
+  </div>
+
+  <!-- Contact -->
+  <div class="mob-item">
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- CTA -->
+  <div class="mob-item">
+    <a href="contact.html" style="color: var(--gold-light); font-weight: 700">
+      Book Free Session
+    </a>
+  </div>
+
 </div>
-        <!-- <div class="mob-item">
-          <a
-            href="#"
-            onclick="
-              window.location = 'ielts.html';
-              closeMob();
-              return false;
-            "
-            >Test Prep</a
-          >
-        </div> -->
-        <div class="mob-item">
-          <a href="blog.html">Blog</a>
-        </div>
-        <div class="mob-item">
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="mob-item">
-          <a
-            href="contact.html"
-            onclick="
-              scrollToSection('counsellors');
-              closeMob();
-              return false;
-            "
-            style="color: var(--gold-light); font-weight: 700"
-            > Book Free Counselling</a
-          >
-        </div>
-      </div>
     </nav>
 
     <div id="mainContent">
@@ -259,962 +237,8 @@
           </div>
           <!-- RIGHT — SVG Illustration -->
           <div class="hero-visual" style="position: relative">
-            <svg
-              class="hero-svg-wrap"
-              viewBox="0 0 540 500"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <defs>
-                <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#153764" />
-                  <stop offset="100%" stop-color="#0B2447" />
-                </linearGradient>
-                <linearGradient id="gold1" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0%" stop-color="#D4A017" />
-                  <stop offset="100%" stop-color="#F0C040" />
-                </linearGradient>
-                <linearGradient id="blue1" x1="0" y1="1" x2="0" y2="0">
-                  <stop offset="0%" stop-color="#061629" />
-                  <stop offset="100%" stop-color="#153764" />
-                </linearGradient>
-                <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stop-color="#1e4a8a" />
-                  <stop offset="100%" stop-color="#0d2a54" />
-                </linearGradient>
-                <filter id="glow">
-                  <feGaussianBlur stdDeviation="3" result="blur" />
-                  <feMerge>
-                    <feMergeNode in="blur" />
-                    <feMergeNode in="SourceGraphic" />
-                  </feMerge>
-                </filter>
-                <radialGradient id="lampGlow" cx="50%" cy="50%">
-                  <stop offset="0%" stop-color="#F0C040" stop-opacity="0.6" />
-                  <stop offset="100%" stop-color="#F0C040" stop-opacity="0" />
-                </radialGradient>
-              </defs>
-              <!-- Background card -->
-              <rect width="540" height="500" rx="28" fill="url(#blue1)" />
-              <!-- Sky / atmosphere -->
-              <rect
-                x="0"
-                y="0"
-                width="540"
-                height="280"
-                rx="28"
-                fill="url(#sky1)"
-              />
-              <!-- Stars -->
-              <circle cx="60" cy="40" r="1.5" fill="white" opacity="0.7" />
-              <circle cx="120" cy="20" r="1" fill="white" opacity="0.5" />
-              <circle cx="200" cy="55" r="1.5" fill="white" opacity="0.6" />
-              <circle cx="310" cy="30" r="1" fill="white" opacity="0.4" />
-              <circle cx="390" cy="60" r="2" fill="white" opacity="0.5" />
-              <circle cx="460" cy="25" r="1.5" fill="white" opacity="0.7" />
-              <circle cx="500" cy="70" r="1" fill="white" opacity="0.5" />
-              <circle cx="80" cy="100" r="1" fill="white" opacity="0.4" />
-              <circle cx="480" cy="110" r="1.5" fill="white" opacity="0.4" />
-              <!-- Moon -->
-              <circle cx="468" cy="52" r="20" fill="#FFF8DC" opacity="0.9" />
-              <circle cx="476" cy="46" r="16" fill="#1e4a8a" />
-              <!-- GLOBE in background -->
-              <circle
-                cx="270"
-                cy="185"
-                r="130"
-                fill="none"
-                stroke="rgba(212,160,23,0.12)"
-                stroke-width="1.5"
-              />
-              <circle
-                cx="270"
-                cy="185"
-                r="100"
-                fill="none"
-                stroke="rgba(212,160,23,0.08)"
-                stroke-width="1"
-              />
-              <circle
-                cx="270"
-                cy="185"
-                r="70"
-                fill="none"
-                stroke="rgba(212,160,23,0.06)"
-                stroke-width="1"
-              />
-              <ellipse
-                cx="270"
-                cy="185"
-                rx="130"
-                ry="40"
-                fill="none"
-                stroke="rgba(212,160,23,0.1)"
-                stroke-width="1"
-              />
-              <ellipse
-                cx="270"
-                cy="185"
-                rx="130"
-                ry="80"
-                fill="none"
-                stroke="rgba(212,160,23,0.07)"
-                stroke-width="1"
-              />
-              <line
-                x1="140"
-                y1="185"
-                x2="400"
-                y2="185"
-                stroke="rgba(212,160,23,0.1)"
-                stroke-width="1"
-              />
-              <line
-                x1="270"
-                y1="55"
-                x2="270"
-                y2="315"
-                stroke="rgba(212,160,23,0.1)"
-                stroke-width="1"
-              />
-              <!-- Plane path arc -->
-              <path
-                d="M 80 240 Q 190 100 400 180"
-                fill="none"
-                stroke="rgba(212,160,23,0.35)"
-                stroke-width="1.5"
-                stroke-dasharray="6 4"
-              />
-              <!-- AIRPLANE -->
-              <g transform="rotate(-28,255,163)">
-                <ellipse
-                  cx="255"
-                  cy="163"
-                  rx="18"
-                  ry="6"
-                  fill="white"
-                  opacity="0.95"
-                />
-                <polygon
-                  points="255,157 270,163 255,169"
-                  fill="white"
-                  opacity="0.95"
-                />
-                <line
-                  x1="248"
-                  y1="160"
-                  x2="240"
-                  y2="152"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  opacity="0.8"
-                />
-                <line
-                  x1="248"
-                  y1="166"
-                  x2="240"
-                  y2="174"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  opacity="0.8"
-                />
-                <line
-                  x1="252"
-                  y1="169"
-                  x2="246"
-                  y2="175"
-                  stroke="white"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  opacity="0.6"
-                />
-              </g>
-              <!-- Ground platform -->
-              <rect
-                x="0"
-                y="330"
-                width="540"
-                height="170"
-                rx="0"
-                fill="#04121e"
-              />
-              <rect
-                x="0"
-                y="328"
-                width="540"
-                height="6"
-                rx="0"
-                fill="rgba(212,160,23,0.15)"
-              />
-              <!-- Buildings silhouette city skyline -->
-              <!-- Building 1 (Big left) -->
-              <rect x="20" y="230" width="55" height="100" fill="#0a1e35" />
-              <rect x="30" y="210" width="35" height="25" fill="#0a1e35" />
-              <rect x="40" y="195" width="15" height="18" fill="#0d2548" />
-              <!-- windows -->
-              <rect
-                x="28"
-                y="238"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="42"
-                y="238"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.3)"
-                rx="1"
-              />
-              <rect
-                x="56"
-                y="238"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="28"
-                y="256"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.3)"
-                rx="1"
-              />
-              <rect
-                x="42"
-                y="256"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.6)"
-                rx="1"
-              />
-              <rect
-                x="56"
-                y="256"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.3)"
-                rx="1"
-              />
-              <rect
-                x="28"
-                y="274"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="42"
-                y="274"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.3)"
-                rx="1"
-              />
-              <rect
-                x="56"
-                y="274"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.4)"
-                rx="1"
-              />
-              <!-- Building 2 Tall mid-left -->
-              <rect x="85" y="200" width="42" height="130" fill="#081830" />
-              <rect x="92" y="182" width="28" height="22" fill="#081830" />
-              <rect x="100" y="170" width="12" height="14" fill="#0a2040" />
-              <!-- antenna -->
-              <line
-                x1="106"
-                y1="170"
-                x2="106"
-                y2="150"
-                stroke="rgba(212,160,23,0.8)"
-                stroke-width="1.5"
-              />
-              <circle cx="106" cy="150" r="2" fill="rgba(212,160,23,0.8)" />
-              <!-- windows -->
-              <rect
-                x="91"
-                y="208"
-                width="7"
-                height="9"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="103"
-                y="208"
-                width="7"
-                height="9"
-                fill="rgba(240,192,64,0.6)"
-                rx="1"
-              />
-              <rect
-                x="115"
-                y="208"
-                width="7"
-                height="9"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="91"
-                y="224"
-                width="7"
-                height="9"
-                fill="rgba(240,192,64,0.4)"
-                rx="1"
-              />
-              <rect
-                x="103"
-                y="224"
-                width="7"
-                height="9"
-                fill="rgba(255,255,255,0.15)"
-                rx="1"
-              />
-              <rect
-                x="115"
-                y="224"
-                width="7"
-                height="9"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="91"
-                y="240"
-                width="7"
-                height="9"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="103"
-                y="240"
-                width="7"
-                height="9"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="115"
-                y="240"
-                width="7"
-                height="9"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="91"
-                y="256"
-                width="7"
-                height="9"
-                fill="rgba(240,192,64,0.3)"
-                rx="1"
-              />
-              <rect
-                x="103"
-                y="256"
-                width="7"
-                height="9"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="115"
-                y="256"
-                width="7"
-                height="9"
-                fill="rgba(240,192,64,0.4)"
-                rx="1"
-              />
-              <!-- MAIN CENTRAL BUILDING — University-style -->
-              <rect x="155" y="160" width="120" height="170" fill="#07172a" />
-              <!-- pillars -->
-              <rect x="162" y="240" width="10" height="90" fill="#0a1e35" />
-              <rect x="178" y="240" width="10" height="90" fill="#0a1e35" />
-              <rect x="194" y="240" width="10" height="90" fill="#0a1e35" />
-              <rect x="210" y="240" width="10" height="90" fill="#0a1e35" />
-              <rect x="226" y="240" width="10" height="90" fill="#0a1e35" />
-              <rect x="242" y="240" width="10" height="90" fill="#0a1e35" />
-              <!-- roof steps -->
-              <rect x="148" y="148" width="134" height="16" fill="#081a2e" />
-              <rect x="156" y="136" width="118" height="16" fill="#0a1e35" />
-              <rect x="168" y="120" width="94" height="20" fill="#091c33" />
-              <!-- dome -->
-              <ellipse cx="215" cy="118" rx="30" ry="24" fill="#0d2447" />
-              <ellipse cx="215" cy="110" rx="20" ry="16" fill="#112d58" />
-              <line
-                x1="215"
-                y1="94"
-                x2="215"
-                y2="70"
-                stroke="rgba(212,160,23,0.9)"
-                stroke-width="2"
-              />
-              <polygon
-                points="215,65 219,76 211,76"
-                fill="rgba(212,160,23,0.9)"
-              />
-              <!-- university windows -->
-              <rect
-                x="165"
-                y="170"
-                width="14"
-                height="18"
-                fill="rgba(240,192,64,0.55)"
-                rx="2"
-              />
-              <rect
-                x="185"
-                y="170"
-                width="14"
-                height="18"
-                fill="rgba(240,192,64,0.3)"
-                rx="2"
-              />
-              <rect
-                x="205"
-                y="170"
-                width="14"
-                height="18"
-                fill="rgba(240,192,64,0.6)"
-                rx="2"
-              />
-              <rect
-                x="225"
-                y="170"
-                width="14"
-                height="18"
-                fill="rgba(240,192,64,0.3)"
-                rx="2"
-              />
-              <rect
-                x="245"
-                y="170"
-                width="14"
-                height="18"
-                fill="rgba(240,192,64,0.5)"
-                rx="2"
-              />
-              <rect
-                x="165"
-                y="196"
-                width="14"
-                height="18"
-                fill="rgba(255,255,255,0.15)"
-                rx="2"
-              />
-              <rect
-                x="185"
-                y="196"
-                width="14"
-                height="18"
-                fill="rgba(240,192,64,0.4)"
-                rx="2"
-              />
-              <rect
-                x="205"
-                y="196"
-                width="14"
-                height="18"
-                fill="rgba(240,192,64,0.55)"
-                rx="2"
-              />
-              <rect
-                x="225"
-                y="196"
-                width="14"
-                height="18"
-                fill="rgba(255,255,255,0.15)"
-                rx="2"
-              />
-              <rect
-                x="245"
-                y="196"
-                width="14"
-                height="18"
-                fill="rgba(240,192,64,0.35)"
-                rx="2"
-              />
-              <!-- door -->
-              <rect
-                x="198"
-                y="280"
-                width="34"
-                height="50"
-                fill="rgba(212,160,23,0.4)"
-                rx="2"
-              />
-              <rect
-                x="206"
-                y="286"
-                width="7"
-                height="16"
-                fill="rgba(212,160,23,0.6)"
-                rx="1"
-              />
-              <rect
-                x="217"
-                y="286"
-                width="7"
-                height="16"
-                fill="rgba(212,160,23,0.6)"
-                rx="1"
-              />
-              <!-- Steps -->
-              <rect
-                x="160"
-                y="327"
-                width="110"
-                height="4"
-                fill="#0d2040"
-                rx="1"
-              />
-              <rect
-                x="166"
-                y="322"
-                width="98"
-                height="5"
-                fill="#0a1b32"
-                rx="1"
-              />
-              <!-- Building 3 right of center -->
-              <rect x="290" y="195" width="55" height="135" fill="#081830" />
-              <rect x="298" y="178" width="39" height="20" fill="#081830" />
-              <rect x="308" y="162" width="19" height="19" fill="#0a1e40" />
-              <line
-                x1="317"
-                y1="162"
-                x2="317"
-                y2="140"
-                stroke="rgba(212,160,23,0.6)"
-                stroke-width="1.2"
-              />
-              <!-- windows -->
-              <rect
-                x="296"
-                y="203"
-                width="9"
-                height="11"
-                fill="rgba(240,192,64,0.4)"
-                rx="1"
-              />
-              <rect
-                x="311"
-                y="203"
-                width="9"
-                height="11"
-                fill="rgba(240,192,64,0.6)"
-                rx="1"
-              />
-              <rect
-                x="326"
-                y="203"
-                width="9"
-                height="11"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="296"
-                y="221"
-                width="9"
-                height="11"
-                fill="rgba(255,255,255,0.15)"
-                rx="1"
-              />
-              <rect
-                x="311"
-                y="221"
-                width="9"
-                height="11"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="326"
-                y="221"
-                width="9"
-                height="11"
-                fill="rgba(240,192,64,0.4)"
-                rx="1"
-              />
-              <rect
-                x="296"
-                y="239"
-                width="9"
-                height="11"
-                fill="rgba(240,192,64,0.6)"
-                rx="1"
-              />
-              <rect
-                x="311"
-                y="239"
-                width="9"
-                height="11"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="326"
-                y="239"
-                width="9"
-                height="11"
-                fill="rgba(240,192,64,0.3)"
-                rx="1"
-              />
-              <!-- Building 4 far right -->
-              <rect x="360" y="215" width="70" height="115" fill="#07172a" />
-              <rect x="370" y="198" width="50" height="20" fill="#07172a" />
-              <rect x="380" y="180" width="30" height="22" fill="#09192f" />
-              <!-- windows -->
-              <rect
-                x="368"
-                y="224"
-                width="10"
-                height="12"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="384"
-                y="224"
-                width="10"
-                height="12"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="400"
-                y="224"
-                width="10"
-                height="12"
-                fill="rgba(240,192,64,0.4)"
-                rx="1"
-              />
-              <rect
-                x="416"
-                y="224"
-                width="10"
-                height="12"
-                fill="rgba(240,192,64,0.6)"
-                rx="1"
-              />
-              <rect
-                x="368"
-                y="244"
-                width="10"
-                height="12"
-                fill="rgba(255,255,255,0.15)"
-                rx="1"
-              />
-              <rect
-                x="384"
-                y="244"
-                width="10"
-                height="12"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="400"
-                y="244"
-                width="10"
-                height="12"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="416"
-                y="244"
-                width="10"
-                height="12"
-                fill="rgba(240,192,64,0.4)"
-                rx="1"
-              />
-              <rect
-                x="368"
-                y="264"
-                width="10"
-                height="12"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="384"
-                y="264"
-                width="10"
-                height="12"
-                fill="rgba(255,255,255,0.15)"
-                rx="1"
-              />
-              <rect
-                x="400"
-                y="264"
-                width="10"
-                height="12"
-                fill="rgba(240,192,64,0.3)"
-                rx="1"
-              />
-              <rect
-                x="416"
-                y="264"
-                width="10"
-                height="12"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <!-- Building 5 far right small -->
-              <rect x="446" y="245" width="45" height="85" fill="#0a1c34" />
-              <rect x="452" y="232" width="33" height="16" fill="#0a1c34" />
-              <rect
-                x="456"
-                y="253"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.5)"
-                rx="1"
-              />
-              <rect
-                x="469"
-                y="253"
-                width="8"
-                height="10"
-                fill="rgba(255,255,255,0.2)"
-                rx="1"
-              />
-              <rect
-                x="456"
-                y="270"
-                width="8"
-                height="10"
-                fill="rgba(255,255,255,0.15)"
-                rx="1"
-              />
-              <rect
-                x="469"
-                y="270"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.6)"
-                rx="1"
-              />
-              <rect
-                x="456"
-                y="287"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.4)"
-                rx="1"
-              />
-              <rect
-                x="469"
-                y="287"
-                width="8"
-                height="10"
-                fill="rgba(240,192,64,0.3)"
-                rx="1"
-              />
-              <!-- Road / ground -->
-              <rect
-                x="0"
-                y="334"
-                width="540"
-                height="3"
-                fill="rgba(212,160,23,0.18)"
-              />
-              <!-- Street lamp left -->
-              <line
-                x1="135"
-                y1="270"
-                x2="135"
-                y2="334"
-                stroke="#0e2540"
-                stroke-width="3"
-              />
-              <line
-                x1="135"
-                y1="272"
-                x2="148"
-                y2="265"
-                stroke="#0e2540"
-                stroke-width="2"
-              />
-              <circle
-                cx="148"
-                cy="263"
-                r="4"
-                fill="rgba(240,192,64,0.9)"
-                filter="url(#glow)"
-              />
-              <circle cx="148" cy="263" r="12" fill="url(#lampGlow)" />
-              <!-- Street lamp right -->
-              <line
-                x1="405"
-                y1="264"
-                x2="405"
-                y2="334"
-                stroke="#0e2540"
-                stroke-width="3"
-              />
-              <line
-                x1="405"
-                y1="266"
-                x2="392"
-                y2="259"
-                stroke="#0e2540"
-                stroke-width="2"
-              />
-              <circle
-                cx="392"
-                cy="257"
-                r="4"
-                fill="rgba(240,192,64,0.9)"
-                filter="url(#glow)"
-              />
-              <circle cx="392" cy="257" r="12" fill="url(#lampGlow)" />
-              <!-- Road markings -->
-              <rect
-                x="255"
-                y="340"
-                width="30"
-                height="6"
-                rx="2"
-                fill="rgba(255,255,255,0.12)"
-              />
-              <rect
-                x="255"
-                y="354"
-                width="30"
-                height="6"
-                rx="2"
-                fill="rgba(255,255,255,0.12)"
-              />
-              <rect
-                x="255"
-                y="368"
-                width="30"
-                height="6"
-                rx="2"
-                fill="rgba(255,255,255,0.12)"
-              />
-              <rect
-                x="255"
-                y="382"
-                width="30"
-                height="6"
-                rx="2"
-                fill="rgba(255,255,255,0.12)"
-              />
-              <!-- Trees -->
-              <rect x="138" y="305" width="5" height="28" fill="#05111e" />
-              <ellipse cx="140" cy="302" rx="10" ry="12" fill="#0a2a14" />
-              <rect x="338" y="308" width="5" height="24" fill="#05111e" />
-              <ellipse cx="340" cy="305" rx="9" ry="11" fill="#0a2a14" />
-              <!-- Reflection on ground -->
-              <rect
-                x="0"
-                y="334"
-                width="540"
-                height="80"
-                rx="0"
-                fill="rgba(6,22,41,0.5)"
-              />
-              <!-- Text on building facade -->
-              <text
-                x="215"
-                y="225"
-                text-anchor="middle"
-                font-family="'Playfair Display',serif"
-                font-size="9"
-                fill="rgba(212,160,23,0.7)"
-                letter-spacing="1"
-              >
-                SEHER EDUCATION
-              </text>
-              <!-- Shooting star -->
-              <line
-                x1="350"
-                y1="45"
-                x2="390"
-                y2="25"
-                stroke="white"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                opacity="0.6"
-              />
-              <circle cx="350" cy="45" r="2" fill="white" opacity="0.7" />
-              <!-- Gold accent ring around dome -->
-              <circle
-                cx="215"
-                cy="108"
-                r="22"
-                fill="none"
-                stroke="rgba(212,160,23,0.3)"
-                stroke-width="1"
-                stroke-dasharray="4 3"
-              />
-              <!-- Bottom: mortarboard + diploma decoration -->
-              <g transform="translate(40,400)">
-                <rect
-                  x="0"
-                  y="0"
-                  width="50"
-                  height="36"
-                  rx="6"
-                  fill="rgba(212,160,23,0.15)"
-                  stroke="rgba(212,160,23,0.3)"
-                  stroke-width="1"
-                />
-                <text x="25" y="22" text-anchor="middle" font-size="18">
-                  🎓
-                </text>
-              </g>
-              <g transform="translate(440,398)">
-                <rect
-                  x="0"
-                  y="0"
-                  width="50"
-                  height="36"
-                  rx="6"
-                  fill="rgba(255,255,255,0.07)"
-                  stroke="rgba(255,255,255,0.15)"
-                  stroke-width="1"
-                />
-                <text x="25" y="22" text-anchor="middle" font-size="18">
-                  📜
-                </text>
-              </g>
-              <!-- Subtle gradient overlay bottom -->
-              <rect
-                x="0"
-                y="400"
-                width="540"
-                height="100"
-                rx="0"
-                fill="url(#blue1)"
-                opacity="0.5"
-              />
-              <!-- Gold accent border bottom -->
-              <rect
-                x="0"
-                y="492"
-                width="540"
-                height="3"
-                rx="0"
-                fill="url(#gold1)"
-                opacity="0.5"
-              />
-            </svg>
+            <img class="img1" src="assets/images/front-img.png" alt="">
+            
             <!-- Floating stat cards -->
             <div class="hero-float-card hfc-1">
               <div class="hfc-icon">
@@ -1226,14 +250,14 @@
               </div>
             </div>
             <div class="hero-float-card hfc-2">
-              <div class="hfc-icon">✈️</div>
+              <div class="hfc-icon"><i class="fa-solid fa-circle-check" style="color: white;"></i></div>
               <div class="hfc-info">
                 <span class="hfc-val">98% Visa Success</span
                 ><span class="hfc-lbl">Industry Best</span>
               </div>
             </div>
             <div class="hero-float-card hfc-3">
-              <div class="hfc-icon">🏆</div>
+              <div class="hfc-icon"><i class="fa-solid fa-building-columns" style="color: white;"></i></div>
               <div class="hfc-info">
                 <span class="hfc-val">200+ Universities</span
                 ><span class="hfc-lbl">Global Network</span>
@@ -1346,7 +370,7 @@
             <div class="step-card fade-up">
               <div class="step-num-wrap">
                 <div class="step-circle-outer"></div>
-                <div class="step-circle"><span class="step-icon">🎯</span></div>
+                <div class="step-circle"><span class="step-icon"><i class="fa-solid fa-user-graduate" style="color: white;"></i> </span></div>
                 <div class="step-number">1</div>
               </div>
               <h3>Education Counseling</h3>
@@ -1362,7 +386,7 @@
                   class="step-circle-outer"
                   style="animation-direction: reverse"
                 ></div>
-                <div class="step-circle"><span class="step-icon">🏛️</span></div>
+                <div class="step-circle"><span class="step-icon"><i class="fa-solid fa-file-pen" style="color: white;"></i></span></div>
                 <div class="step-number">2</div>
               </div>
               <h3>University Applications</h3>
@@ -1375,7 +399,7 @@
             <div class="step-card fade-up">
               <div class="step-num-wrap">
                 <div class="step-circle-outer"></div>
-                <div class="step-circle"><span class="step-icon">💰</span></div>
+                <div class="step-circle"><span class="step-icon"><i class="fa-solid fa-graduation-cap" style="color: white;"></i></span></div>
                 <div class="step-number">3</div>
               </div>
               <h3>Loans &amp; Scholarships</h3>
@@ -1391,7 +415,7 @@
                   class="step-circle-outer"
                   style="animation-direction: reverse"
                 ></div>
-                <div class="step-circle"><span class="step-icon">✈️</span></div>
+                <div class="step-circle"><span class="step-icon"><i class="fa-solid fa-passport" style="color: white;"></i></span></div>
                 <div class="step-number">4</div>
               </div>
               <h3>Visa Processing</h3>
@@ -1504,7 +528,7 @@
               <p>
                 Expert guidance to navigate academic choices and professional pathways.
               </p>
-              <a class="svc-link" href="#">Explore Programs →</a>
+              <a class="svc-link" href="assets/Career Counselling section.pdf" target="_blank">Explore Programs →</a>
             </div>
             <div class="svc-card fade-up">
               <div class="svc-icon-wrap"><i class="fa-solid fa-bullhorn" style="color: white;"></i></div>
@@ -1512,7 +536,7 @@
               <p>
                 Promote your institute at schools and major educational events with us across North India.
               </p>
-              <a class="svc-link" href="#">View Courses →</a>
+              <a class="svc-link" href="assets/proposal Beyond Classroom.pdf" target="_blank">View Courses →</a>
             </div>
             <div class="svc-card fade-up">
               <div class="svc-icon-wrap"><i class="fa-solid fa-user-check" style="color: white;"></i></div>
@@ -1520,7 +544,7 @@
               <p>
                 Seamless, end-to-end support for securing seats in top universities globally.
               </p>
-              <a class="svc-link" href="#">Get Started →</a>
+              <a class="svc-link" href="assets/Admissions & Placements.pdf" target="_blank">Get Started →</a>
             </div>
             <div class="svc-card fade-up">
               <div class="svc-icon-wrap"><i class="fa-solid fa-file-pen" style="color: white;"></i></div>
@@ -1528,7 +552,7 @@
               <p>
                 Scientific assessments designed to identify student strengths and ideal career matches.
               </p>
-              <a class="svc-link" href="#">Learn More →</a>
+              <a class="svc-link" href="assets/Career Aptitude Test.pdf" target="_blank">Learn More →</a>
             </div>
             <div class="svc-card fade-up">
               <div class="svc-icon-wrap"><i class="fa-solid fa-user-group" style="color: white;"></i></div>
@@ -1536,7 +560,7 @@
               <p>
                  Dedicated, tailored sessions focusing on individual student goals and needs.
               </p>
-              <a class="svc-link" href="#">Find Scholarships →</a>
+              <a class="svc-link" href="assets/Personalized One to one.pdf" target="_blank">Find Scholarships →</a>
             </div>
             <div class="svc-card fade-up">
               <div class="svc-icon-wrap"><i class="fa-solid fa-lightbulb" style="color: white;"></i></div>
@@ -1547,11 +571,8 @@
               </p>
               <a
                 class="svc-link"
-                href="#"
-                onclick="
-                  window.location = 'ielts.html';
-                  return false;
-                "
+                href="assets/proposal Beyond Classroom.pdf" target="_blank"
+                
                 >Enrol Now →</a
               >
             </div>
@@ -1573,347 +594,8 @@
           <div class="dest-grid">
             <!-- UK — Big Ben / Parliament -->
             <div
-              class="dest-card fade-up"
-              onclick="window.location = 'uk.html'"
-            >
-              <svg
-                class="dest-scene"
-                viewBox="0 0 380 320"
-                preserveAspectRatio="xMidYMid slice"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <linearGradient id="uksky" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#1a2f5a" />
-                    <stop offset="100%" stop-color="#0d1f3e" />
-                  </linearGradient>
-                </defs>
-                <rect width="380" height="320" fill="url(#uksky)" />
-                <!-- Thames -->
-                <rect x="0" y="230" width="380" height="90" fill="#0a1929" />
-                <rect
-                  x="0"
-                  y="228"
-                  width="380"
-                  height="8"
-                  fill="#0f2540"
-                  opacity="0.8"
-                />
-                <!-- Water reflections -->
-                <rect
-                  x="20"
-                  y="240"
-                  width="60"
-                  height="2"
-                  rx="1"
-                  fill="rgba(212,160,23,0.2)"
-                />
-                <rect
-                  x="30"
-                  y="248"
-                  width="40"
-                  height="1.5"
-                  rx="1"
-                  fill="rgba(212,160,23,0.15)"
-                />
-                <rect
-                  x="200"
-                  y="242"
-                  width="50"
-                  height="2"
-                  rx="1"
-                  fill="rgba(255,255,255,0.1)"
-                />
-                <rect
-                  x="280"
-                  y="246"
-                  width="70"
-                  height="1.5"
-                  rx="1"
-                  fill="rgba(212,160,23,0.2)"
-                />
-                <!-- Westminster Bridge simplified -->
-                <rect x="0" y="220" width="380" height="12" fill="#0e2040" />
-                <rect
-                  x="30"
-                  y="212"
-                  width="10"
-                  height="10"
-                  fill="#0f2345"
-                  rx="1"
-                />
-                <rect
-                  x="80"
-                  y="212"
-                  width="10"
-                  height="10"
-                  fill="#0f2345"
-                  rx="1"
-                />
-                <rect
-                  x="130"
-                  y="212"
-                  width="10"
-                  height="10"
-                  fill="#0f2345"
-                  rx="1"
-                />
-                <rect
-                  x="180"
-                  y="212"
-                  width="10"
-                  height="10"
-                  fill="#0f2345"
-                  rx="1"
-                />
-                <rect
-                  x="230"
-                  y="212"
-                  width="10"
-                  height="10"
-                  fill="#0f2345"
-                  rx="1"
-                />
-                <rect
-                  x="280"
-                  y="212"
-                  width="10"
-                  height="10"
-                  fill="#0f2345"
-                  rx="1"
-                />
-                <rect
-                  x="330"
-                  y="212"
-                  width="10"
-                  height="10"
-                  fill="#0f2345"
-                  rx="1"
-                />
-                <!-- Big Ben Tower -->
-                <rect x="120" y="50" width="60" height="175" fill="#0d1f3c" />
-                <rect x="115" y="42" width="70" height="14" fill="#0f2345" />
-                <rect x="112" y="30" width="76" height="14" fill="#0d1f3c" />
-                <!-- Clock face -->
-                <circle
-                  cx="150"
-                  cy="75"
-                  r="22"
-                  fill="#0f2345"
-                  stroke="rgba(212,160,23,0.6)"
-                  stroke-width="2"
-                />
-                <circle cx="150" cy="75" r="18" fill="#112850" />
-                <line
-                  x1="150"
-                  y1="60"
-                  x2="150"
-                  y2="75"
-                  stroke="rgba(212,160,23,0.9)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="150"
-                  y1="75"
-                  x2="163"
-                  y2="75"
-                  stroke="rgba(212,160,23,0.9)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                />
-                <!-- Spire -->
-                <polygon points="150,0 138,32 162,32" fill="#0d1f3c" />
-                <circle cx="150" cy="0" r="3" fill="rgba(212,160,23,0.8)" />
-                <!-- Windows on tower -->
-                <rect
-                  x="134"
-                  y="110"
-                  width="10"
-                  height="14"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="156"
-                  y="110"
-                  width="10"
-                  height="14"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="134"
-                  y="132"
-                  width="10"
-                  height="14"
-                  fill="rgba(212,160,23,0.5)"
-                  rx="1"
-                />
-                <rect
-                  x="156"
-                  y="132"
-                  width="10"
-                  height="14"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="134"
-                  y="154"
-                  width="10"
-                  height="14"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="156"
-                  y="154"
-                  width="10"
-                  height="14"
-                  fill="rgba(212,160,23,0.5)"
-                  rx="1"
-                />
-                <rect
-                  x="134"
-                  y="176"
-                  width="10"
-                  height="14"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="156"
-                  y="176"
-                  width="10"
-                  height="14"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <!-- Parliament building -->
-                <rect x="0" y="145" width="120" height="80" fill="#0a1a35" />
-                <rect x="240" y="145" width="140" height="80" fill="#0a1a35" />
-                <!-- Parliament windows -->
-                <rect
-                  x="10"
-                  y="156"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="24"
-                  y="156"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.5)"
-                  rx="1"
-                />
-                <rect
-                  x="38"
-                  y="156"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="52"
-                  y="156"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="66"
-                  y="156"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="80"
-                  y="156"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.5)"
-                  rx="1"
-                />
-                <rect
-                  x="94"
-                  y="156"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="10"
-                  y="174"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="24"
-                  y="174"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="38"
-                  y="174"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.5)"
-                  rx="1"
-                />
-                <rect
-                  x="52"
-                  y="174"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="66"
-                  y="174"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="80"
-                  y="174"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="94"
-                  y="174"
-                  width="8"
-                  height="10"
-                  fill="rgba(212,160,23,0.5)"
-                  rx="1"
-                />
-                <!-- Moon + stars -->
-                <circle cx="320" cy="40" r="18" fill="#FFF8DC" opacity="0.85" />
-                <circle cx="327" cy="35" r="14" fill="#1a2f5a" />
-                <circle cx="60" cy="30" r="1.5" fill="white" opacity="0.5" />
-                <circle cx="90" cy="15" r="1" fill="white" opacity="0.4" />
-                <circle cx="250" cy="20" r="1.5" fill="white" opacity="0.6" />
-                <circle cx="280" cy="50" r="1" fill="white" opacity="0.5" />
-              </svg>
+              class="dest-card fade-up">
+              
               <div class="dest-overlay"></div>
               <div class="dest-overlay-top"></div>
               <div class="dest-badge">Top Choice</div>
@@ -1927,234 +609,15 @@
                 <span class="dest-hover-btn">Explore UK →</span>
               </div>
               <div class="dest-info">
-                <span class="dest-flag">🇬🇧</span>
+                <span class="dest-flag"></span>
                 <h3>United Kingdom</h3>
                 <p>80+ Partner Universities</p>
               </div>
             </div>
             <!-- Canada — CN Tower / skyline -->
             <div
-              class="dest-card fade-up"
-              onclick="window.location = 'canada.html'"
-            >
-              <svg
-                class="dest-scene"
-                viewBox="0 0 380 320"
-                preserveAspectRatio="xMidYMid slice"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <linearGradient id="cansk" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#0a2818" />
-                    <stop offset="100%" stop-color="#041a0c" />
-                  </linearGradient>
-                </defs>
-                <rect width="380" height="320" fill="url(#cansk)" />
-                <!-- Aurora borealis -->
-                <ellipse
-                  cx="190"
-                  cy="100"
-                  rx="200"
-                  ry="60"
-                  fill="none"
-                  stroke="rgba(0,200,100,0.15)"
-                  stroke-width="30"
-                />
-                <ellipse
-                  cx="160"
-                  cy="80"
-                  rx="160"
-                  ry="40"
-                  fill="none"
-                  stroke="rgba(0,180,120,0.1)"
-                  stroke-width="20"
-                />
-                <ellipse
-                  cx="220"
-                  cy="120"
-                  rx="180"
-                  ry="50"
-                  fill="none"
-                  stroke="rgba(50,220,150,0.08)"
-                  stroke-width="25"
-                />
-                <!-- Stars -->
-                <circle cx="40" cy="20" r="1.5" fill="white" opacity="0.7" />
-                <circle cx="100" cy="35" r="1" fill="white" opacity="0.5" />
-                <circle cx="200" cy="15" r="1.5" fill="white" opacity="0.6" />
-                <circle cx="300" cy="25" r="1" fill="white" opacity="0.4" />
-                <circle cx="350" cy="45" r="1.5" fill="white" opacity="0.5" />
-                <!-- Lake Ontario reflection -->
-                <rect x="0" y="240" width="380" height="80" fill="#061510" />
-                <rect x="0" y="238" width="380" height="5" fill="#0a2010" />
-                <!-- Reflections -->
-                <line
-                  x1="180"
-                  y1="248"
-                  x2="200"
-                  y2="290"
-                  stroke="rgba(212,160,23,0.2)"
-                  stroke-width="2"
-                />
-                <line
-                  x1="100"
-                  y1="248"
-                  x2="80"
-                  y2="300"
-                  stroke="rgba(100,200,120,0.15)"
-                  stroke-width="2"
-                />
-                <!-- CN Tower -->
-                <polygon
-                  points="178,10 182,10 195,200 165,200"
-                  fill="#0c2218"
-                />
-                <rect
-                  x="168"
-                  y="195"
-                  width="44"
-                  height="20"
-                  rx="3"
-                  fill="#0e2820"
-                />
-                <!-- Pod -->
-                <ellipse cx="190" cy="140" rx="16" ry="10" fill="#112a1e" />
-                <rect
-                  x="184"
-                  y="130"
-                  width="12"
-                  height="12"
-                  fill="rgba(212,160,23,0.4)"
-                />
-                <!-- Antenna -->
-                <line
-                  x1="190"
-                  y1="10"
-                  x2="190"
-                  y2="0"
-                  stroke="rgba(212,160,23,0.7)"
-                  stroke-width="1.5"
-                />
-                <!-- Toronto skyline -->
-                <rect x="0" y="170" width="140" height="70" fill="#081e10" />
-                <rect x="220" y="185" width="160" height="55" fill="#081e10" />
-                <!-- buildings -->
-                <rect x="10" y="160" width="28" height="80" fill="#0a2015" />
-                <rect x="44" y="175" width="22" height="65" fill="#071808" />
-                <rect x="72" y="155" width="30" height="85" fill="#0a2015" />
-                <rect x="108" y="168" width="25" height="72" fill="#071808" />
-                <rect x="225" y="178" width="28" height="62" fill="#0a2015" />
-                <rect x="259" y="190" width="20" height="50" fill="#071808" />
-                <rect x="285" y="172" width="32" height="68" fill="#0a2015" />
-                <rect x="323" y="180" width="25" height="60" fill="#071808" />
-                <!-- Windows lit -->
-                <rect
-                  x="15"
-                  y="168"
-                  width="6"
-                  height="8"
-                  fill="rgba(0,200,100,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="26"
-                  y="168"
-                  width="6"
-                  height="8"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="15"
-                  y="183"
-                  width="6"
-                  height="8"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="26"
-                  y="183"
-                  width="6"
-                  height="8"
-                  fill="rgba(0,200,100,0.25)"
-                  rx="1"
-                />
-                <rect
-                  x="78"
-                  y="163"
-                  width="7"
-                  height="9"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="91"
-                  y="163"
-                  width="7"
-                  height="9"
-                  fill="rgba(0,200,100,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="78"
-                  y="179"
-                  width="7"
-                  height="9"
-                  fill="rgba(0,200,100,0.25)"
-                  rx="1"
-                />
-                <rect
-                  x="91"
-                  y="179"
-                  width="7"
-                  height="9"
-                  fill="rgba(212,160,23,0.35)"
-                  rx="1"
-                />
-                <rect
-                  x="290"
-                  y="180"
-                  width="7"
-                  height="9"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="303"
-                  y="180"
-                  width="7"
-                  height="9"
-                  fill="rgba(0,200,100,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="290"
-                  y="196"
-                  width="7"
-                  height="9"
-                  fill="rgba(0,200,100,0.25)"
-                  rx="1"
-                />
-                <rect
-                  x="303"
-                  y="196"
-                  width="7"
-                  height="9"
-                  fill="rgba(212,160,23,0.35)"
-                  rx="1"
-                />
-                <!-- Maple leaf in sky subtle -->
-                <text
-                  x="330"
-                  y="90"
-                  font-size="24"
-                  fill="rgba(200,16,46,0.25)"
-                  text-anchor="middle"
-                >
-                  🍁
-                </text>
-              </svg>
+              class="dest-card dt-1 fade-up">
+              
               <div class="dest-overlay"></div>
               <div class="dest-overlay-top"></div>
               <div class="dest-hover-info">
@@ -2166,145 +629,15 @@
                 <span class="dest-hover-btn">Explore Canada →</span>
               </div>
               <div class="dest-info">
-                <span class="dest-flag">🇨🇦</span>
+                <span class="dest-flag"></span>
                 <h3>Canada</h3>
                 <p>65+ Partner Universities</p>
               </div>
             </div>
             <!-- Australia — Sydney Opera -->
             <div
-              class="dest-card fade-up"
-              onclick="window.location = 'australia.html'"
-            >
-              <svg
-                class="dest-scene"
-                viewBox="0 0 380 320"
-                preserveAspectRatio="xMidYMid slice"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <linearGradient id="ausky" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#1a3a6a" />
-                    <stop
-                      offset="60%"
-                      stop-color="#e8702a"
-                      stop-opacity="0.7"
-                    />
-                    <stop
-                      offset="100%"
-                      stop-color="#c04a10"
-                      stop-opacity="0.5"
-                    />
-                  </linearGradient>
-                </defs>
-                <rect width="380" height="320" fill="url(#ausky)" />
-                <!-- Sun setting -->
-                <circle cx="190" cy="170" r="50" fill="rgba(240,150,20,0.3)" />
-                <circle cx="190" cy="170" r="30" fill="rgba(240,150,20,0.4)" />
-                <circle cx="190" cy="170" r="16" fill="rgba(240,160,30,0.6)" />
-                <!-- Harbour water -->
-                <rect x="0" y="210" width="380" height="110" fill="#0d1e35" />
-                <rect x="0" y="208" width="380" height="6" fill="#0f2540" />
-                <!-- Harbour Bridge -->
-                <path
-                  d="M0,170 Q95,100 190,140 Q285,100 380,170"
-                  fill="none"
-                  stroke="#0a1e35"
-                  stroke-width="14"
-                />
-                <path
-                  d="M0,170 Q95,100 190,140 Q285,100 380,170"
-                  fill="none"
-                  stroke="#0c2240"
-                  stroke-width="4"
-                />
-                <rect x="0" y="168" width="380" height="8" fill="#0a1e35" />
-                <rect x="60" y="100" width="8" height="76" fill="#0a1e35" />
-                <rect x="312" y="100" width="8" height="76" fill="#0a1e35" />
-                <!-- suspension cables -->
-                <line
-                  x1="64"
-                  y1="100"
-                  x2="0"
-                  y2="172"
-                  stroke="rgba(255,255,255,0.08)"
-                  stroke-width="1"
-                />
-                <line
-                  x1="64"
-                  y1="100"
-                  x2="130"
-                  y2="176"
-                  stroke="rgba(255,255,255,0.08)"
-                  stroke-width="1"
-                />
-                <line
-                  x1="316"
-                  y1="100"
-                  x2="380"
-                  y2="172"
-                  stroke="rgba(255,255,255,0.08)"
-                  stroke-width="1"
-                />
-                <line
-                  x1="316"
-                  y1="100"
-                  x2="250"
-                  y2="176"
-                  stroke="rgba(255,255,255,0.08)"
-                  stroke-width="1"
-                />
-                <!-- Sydney Opera House -->
-                <path d="M130,215 Q135,160 165,175 L165,215 Z" fill="#0d2040" />
-                <path d="M155,215 Q162,150 195,168 L195,215 Z" fill="#0f2448" />
-                <path d="M180,215 Q190,158 218,172 L218,215 Z" fill="#0d2040" />
-                <path d="M210,215 Q215,165 240,175 L240,215 Z" fill="#0f2448" />
-                <!-- Opera shell details -->
-                <path
-                  d="M130,215 Q137,195 165,205"
-                  fill="none"
-                  stroke="rgba(255,255,255,0.1)"
-                  stroke-width="1"
-                />
-                <path
-                  d="M155,215 Q165,188 195,200"
-                  fill="none"
-                  stroke="rgba(255,255,255,0.08)"
-                  stroke-width="1"
-                />
-                <!-- Water reflections -->
-                <path
-                  d="M100,228 Q150,220 200,228 Q250,235 300,228"
-                  fill="none"
-                  stroke="rgba(240,140,20,0.2)"
-                  stroke-width="2"
-                />
-                <path
-                  d="M80,245 Q160,238 240,245"
-                  fill="none"
-                  stroke="rgba(212,160,23,0.15)"
-                  stroke-width="1.5"
-                />
-                <!-- Seagulls simple -->
-                <path
-                  d="M260,70 Q265,65 270,70 Q275,65 280,70"
-                  fill="none"
-                  stroke="rgba(255,255,255,0.4)"
-                  stroke-width="1.5"
-                />
-                <path
-                  d="M290,90 Q294,86 298,90 Q302,86 306,90"
-                  fill="none"
-                  stroke="rgba(255,255,255,0.3)"
-                  stroke-width="1.5"
-                />
-                <path
-                  d="M320,60 Q325,56 330,60 Q335,56 340,60"
-                  fill="none"
-                  stroke="rgba(255,255,255,0.35)"
-                  stroke-width="1.5"
-                />
-              </svg>
+              class="dest-card dt-2 fade-up">
+             
               <div class="dest-overlay"></div>
               <div class="dest-overlay-top"></div>
               <div class="dest-badge">Most Popular</div>
@@ -2317,216 +650,15 @@
                 <span class="dest-hover-btn">Explore Australia →</span>
               </div>
               <div class="dest-info">
-                <span class="dest-flag">🇦🇺</span>
+                <span class="dest-flag"></span>
                 <h3>Australia</h3>
                 <p>55+ Partner Universities</p>
               </div>
             </div>
             <!-- USA — Statue of Liberty / NYC -->
             <div
-              class="dest-card fade-up"
-              onclick="window.location = 'usa.html'"
-            >
-              <svg
-                class="dest-scene"
-                viewBox="0 0 380 280"
-                preserveAspectRatio="xMidYMid slice"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <linearGradient id="ussky" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#0a1428" />
-                    <stop offset="100%" stop-color="#1a0a28" />
-                  </linearGradient>
-                </defs>
-                <rect width="380" height="280" fill="url(#ussky)" />
-                <!-- Stars -->
-                <circle cx="30" cy="15" r="1.5" fill="white" opacity="0.7" />
-                <circle cx="80" cy="30" r="1" fill="white" opacity="0.5" />
-                <circle cx="150" cy="10" r="1.5" fill="white" opacity="0.6" />
-                <circle cx="280" cy="20" r="1" fill="white" opacity="0.4" />
-                <circle cx="340" cy="40" r="1.5" fill="white" opacity="0.5" />
-                <!-- Water -->
-                <rect x="0" y="200" width="380" height="80" fill="#06101e" />
-                <!-- NYC skyline right -->
-                <rect
-                  x="200"
-                  y="100"
-                  width="180"
-                  height="105"
-                  fill="#080f1c"
-                  opacity="0"
-                />
-                <rect x="210" y="130" width="24" height="74" fill="#081220" />
-                <rect x="240" y="115" width="20" height="89" fill="#06101a" />
-                <rect x="266" y="122" width="26" height="82" fill="#081220" />
-                <rect x="298" y="108" width="22" height="96" fill="#06101a" />
-                <rect x="326" y="125" width="20" height="79" fill="#081220" />
-                <rect x="352" y="135" width="28" height="69" fill="#06101a" />
-                <!-- Empire State top -->
-                <rect x="278" y="90" width="4" height="20" fill="#0a1428" />
-                <polygon points="274,90 286,90 280,70" fill="#081220" />
-                <!-- windows NYC -->
-                <rect
-                  x="215"
-                  y="138"
-                  width="6"
-                  height="7"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="225"
-                  y="138"
-                  width="6"
-                  height="7"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="215"
-                  y="152"
-                  width="6"
-                  height="7"
-                  fill="rgba(212,160,23,0.5)"
-                  rx="1"
-                />
-                <rect
-                  x="225"
-                  y="152"
-                  width="6"
-                  height="7"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="270"
-                  y="130"
-                  width="7"
-                  height="8"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="282"
-                  y="130"
-                  width="7"
-                  height="8"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="270"
-                  y="145"
-                  width="7"
-                  height="8"
-                  fill="rgba(212,160,23,0.5)"
-                  rx="1"
-                />
-                <rect
-                  x="282"
-                  y="145"
-                  width="7"
-                  height="8"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="303"
-                  y="116"
-                  width="7"
-                  height="8"
-                  fill="rgba(212,160,23,0.4)"
-                  rx="1"
-                />
-                <rect
-                  x="315"
-                  y="116"
-                  width="7"
-                  height="8"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <!-- Statue of Liberty -->
-                <rect x="75" y="150" width="20" height="50" fill="#0a1e12" />
-                <!-- Pedestal -->
-                <rect x="68" y="185" width="34" height="20" fill="#0a1812" />
-                <rect x="64" y="200" width="42" height="8" fill="#091610" />
-                <!-- Body -->
-                <ellipse cx="85" cy="148" rx="12" ry="16" fill="#0c2218" />
-                <!-- Head -->
-                <circle cx="85" cy="132" r="10" fill="#0e2a1e" />
-                <!-- Crown spikes -->
-                <polygon points="78,124 80,114 82,124" fill="#0e2a1e" />
-                <polygon points="82,122 85,112 88,122" fill="#0e2a1e" />
-                <polygon points="88,124 90,114 92,124" fill="#0e2a1e" />
-                <!-- Torch arm -->
-                <line
-                  x1="97"
-                  y1="144"
-                  x2="114"
-                  y2="128"
-                  stroke="#0c2218"
-                  stroke-width="5"
-                  stroke-linecap="round"
-                />
-                <circle cx="116" cy="125" r="5" fill="rgba(212,160,23,0.7)" />
-                <circle cx="116" cy="125" r="10" fill="rgba(212,160,23,0.15)" />
-                <!-- tablet arm -->
-                <line
-                  x1="73"
-                  y1="150"
-                  x2="62"
-                  y2="158"
-                  stroke="#0c2218"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-                <!-- Island base -->
-                <ellipse cx="85" cy="208" rx="35" ry="6" fill="#081410" />
-                <!-- Water reflections -->
-                <line
-                  x1="60"
-                  y1="218"
-                  x2="115"
-                  y2="218"
-                  stroke="rgba(0,150,80,0.15)"
-                  stroke-width="2"
-                />
-                <line
-                  x1="65"
-                  y1="228"
-                  x2="108"
-                  y2="228"
-                  stroke="rgba(0,150,80,0.1)"
-                  stroke-width="1.5"
-                />
-                <!-- Stars stripes subtle flag in sky -->
-                <rect
-                  x="310"
-                  y="20"
-                  width="28"
-                  height="20"
-                  rx="2"
-                  fill="rgba(200,16,46,0.15)"
-                />
-                <line
-                  x1="310"
-                  y1="26"
-                  x2="338"
-                  y2="26"
-                  stroke="rgba(255,255,255,0.15)"
-                  stroke-width="1"
-                />
-                <line
-                  x1="310"
-                  y1="32"
-                  x2="338"
-                  y2="32"
-                  stroke="rgba(255,255,255,0.15)"
-                  stroke-width="1"
-                />
-              </svg>
+              class="dest-card dt-3 fade-up">
+              
               <div class="dest-overlay"></div>
               <div class="dest-overlay-top"></div>
               <div class="dest-hover-info">
@@ -2538,215 +670,15 @@
                 <span class="dest-hover-btn">Explore USA →</span>
               </div>
               <div class="dest-info">
-                <span class="dest-flag">🇺🇸</span>
+                <span class="dest-flag"></span>
                 <h3>United States</h3>
                 <p>40+ Partner Universities</p>
               </div>
             </div>
             <!-- Germany — Brandenburg Gate -->
             <div
-              class="dest-card fade-up"
-              onclick="window.location = 'germany.html'"
-            >
-              <svg
-                class="dest-scene"
-                viewBox="0 0 380 280"
-                preserveAspectRatio="xMidYMid slice"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <linearGradient id="desky" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#0d1a2e" />
-                    <stop offset="100%" stop-color="#1a1228" />
-                  </linearGradient>
-                </defs>
-                <rect width="380" height="280" fill="url(#desky)" />
-                <!-- Stars -->
-                <circle cx="50" cy="20" r="1.5" fill="white" opacity="0.6" />
-                <circle cx="110" cy="40" r="1" fill="white" opacity="0.4" />
-                <circle cx="200" cy="15" r="1.5" fill="white" opacity="0.7" />
-                <circle cx="310" cy="30" r="1" fill="white" opacity="0.5" />
-                <circle cx="360" cy="20" r="1.5" fill="white" opacity="0.4" />
-                <!-- Full moon -->
-                <circle cx="320" cy="50" r="22" fill="#FFF8DC" opacity="0.8" />
-                <circle cx="328" cy="45" r="17" fill="#0d1a2e" />
-                <!-- Ground -->
-                <rect x="0" y="220" width="380" height="60" fill="#060d1a" />
-                <!-- Road markings -->
-                <rect
-                  x="150"
-                  y="228"
-                  width="20"
-                  height="5"
-                  rx="2"
-                  fill="rgba(255,255,255,0.08)"
-                />
-                <rect
-                  x="150"
-                  y="240"
-                  width="20"
-                  height="5"
-                  rx="2"
-                  fill="rgba(255,255,255,0.08)"
-                />
-                <rect
-                  x="210"
-                  y="228"
-                  width="20"
-                  height="5"
-                  rx="2"
-                  fill="rgba(255,255,255,0.08)"
-                />
-                <rect
-                  x="210"
-                  y="240"
-                  width="20"
-                  height="5"
-                  rx="2"
-                  fill="rgba(255,255,255,0.08)"
-                />
-                <!-- Trees left/right -->
-                <rect x="20" y="170" width="5" height="52" fill="#060d14" />
-                <ellipse cx="22" cy="165" rx="14" ry="20" fill="#071610" />
-                <rect x="50" y="178" width="5" height="44" fill="#060d14" />
-                <ellipse cx="52" cy="174" rx="12" ry="17" fill="#071610" />
-                <rect x="310" y="170" width="5" height="52" fill="#060d14" />
-                <ellipse cx="312" cy="165" rx="14" ry="20" fill="#071610" />
-                <rect x="340" y="178" width="5" height="44" fill="#060d14" />
-                <ellipse cx="342" cy="174" rx="12" ry="17" fill="#071610" />
-                <!-- Brandenburg Gate -->
-                <!-- Main architrave -->
-                <rect x="100" y="140" width="180" height="22" fill="#0a1828" />
-                <rect x="95" y="134" width="190" height="10" fill="#0d1e34" />
-                <rect x="90" y="128" width="200" height="8" fill="#0a1828" />
-                <!-- Columns -->
-                <rect x="104" y="160" width="16" height="62" fill="#09172a" />
-                <rect x="128" y="160" width="16" height="62" fill="#0a1828" />
-                <rect x="152" y="160" width="16" height="62" fill="#09172a" />
-                <rect x="176" y="160" width="16" height="62" fill="#0a1828" />
-                <rect x="200" y="160" width="16" height="62" fill="#09172a" />
-                <rect x="224" y="160" width="16" height="62" fill="#0a1828" />
-                <rect x="248" y="160" width="16" height="62" fill="#09172a" />
-                <rect x="264" y="160" width="16" height="62" fill="#0a1828" />
-                <!-- Column bases -->
-                <rect x="100" y="218" width="180" height="6" fill="#0a1828" />
-                <!-- Quadriga on top -->
-                <ellipse cx="190" cy="118" rx="35" ry="12" fill="#09172a" />
-                <!-- Horses stylized -->
-                <ellipse cx="163" cy="116" rx="10" ry="7" fill="#0c1e32" />
-                <ellipse cx="183" cy="114" rx="10" ry="7" fill="#0a1828" />
-                <ellipse cx="200" cy="114" rx="10" ry="7" fill="#0c1e32" />
-                <ellipse cx="218" cy="116" rx="10" ry="7" fill="#0a1828" />
-                <!-- Figure -->
-                <ellipse cx="190" cy="105" rx="8" ry="12" fill="#0d2240" />
-                <circle cx="190" cy="95" r="6" fill="#0d2240" />
-                <!-- Victory spear -->
-                <line
-                  x1="190"
-                  y1="90"
-                  x2="190"
-                  y2="68"
-                  stroke="rgba(212,160,23,0.8)"
-                  stroke-width="2"
-                />
-                <polygon
-                  points="190,62 186,70 194,70"
-                  fill="rgba(212,160,23,0.8)"
-                />
-                <!-- Gate glow lighting -->
-                <rect
-                  x="100"
-                  y="215"
-                  width="180"
-                  height="10"
-                  rx="2"
-                  fill="rgba(212,160,23,0.06)"
-                />
-                <!-- Background Berlin buildings -->
-                <rect x="0" y="160" width="85" height="62" fill="#060e1c" />
-                <rect x="295" y="155" width="85" height="67" fill="#060e1c" />
-                <!-- Win lights background -->
-                <rect
-                  x="10"
-                  y="168"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="24"
-                  y="168"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="38"
-                  y="168"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="10"
-                  y="184"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.25)"
-                  rx="1"
-                />
-                <rect
-                  x="24"
-                  y="184"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.15)"
-                  rx="1"
-                />
-                <rect
-                  x="305"
-                  y="162"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="319"
-                  y="162"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.3)"
-                  rx="1"
-                />
-                <rect
-                  x="333"
-                  y="162"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.2)"
-                  rx="1"
-                />
-                <rect
-                  x="305"
-                  y="178"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.25)"
-                  rx="1"
-                />
-                <rect
-                  x="319"
-                  y="178"
-                  width="8"
-                  height="9"
-                  fill="rgba(212,160,23,0.15)"
-                  rx="1"
-                />
-              </svg>
+              class="dest-card dt-4 fade-up" >
+              
               <div class="dest-overlay"></div>
               <div class="dest-overlay-top"></div>
               <div class="dest-badge">Free Tuition</div>
@@ -2759,127 +691,15 @@
                 <span class="dest-hover-btn">Explore Germany →</span>
               </div>
               <div class="dest-info">
-                <span class="dest-flag">🇩🇪</span>
+                <span class="dest-flag"></span>
                 <h3>Germany</h3>
                 <p>30+ Partner Universities</p>
               </div>
             </div>
             <!-- New Zealand — Milford Sound -->
             <div
-              class="dest-card fade-up"
-              onclick="window.location = 'nz.html'"
-            >
-              <svg
-                class="dest-scene"
-                viewBox="0 0 380 280"
-                preserveAspectRatio="xMidYMid slice"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <defs>
-                  <linearGradient id="nzsky" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#0a1e3a" />
-                    <stop offset="100%" stop-color="#061428" />
-                  </linearGradient>
-                  <linearGradient id="nzmtn" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#c8d8e8" />
-                    <stop offset="30%" stop-color="#5a7a9a" />
-                    <stop offset="100%" stop-color="#1e3a5a" />
-                  </linearGradient>
-                  <linearGradient id="nzmtn2" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="#b0c8e0" />
-                    <stop offset="40%" stop-color="#3a5a7a" />
-                    <stop offset="100%" stop-color="#162a42" />
-                  </linearGradient>
-                </defs>
-                <rect width="380" height="280" fill="url(#nzsky)" />
-                <!-- Stars Milky Way -->
-                <circle cx="50" cy="20" r="1.5" fill="white" opacity="0.8" />
-                <circle cx="90" cy="10" r="1" fill="white" opacity="0.6" />
-                <circle cx="140" cy="25" r="1.5" fill="white" opacity="0.7" />
-                <circle cx="200" cy="8" r="1" fill="white" opacity="0.5" />
-                <circle cx="260" cy="18" r="1.5" fill="white" opacity="0.8" />
-                <circle cx="320" cy="12" r="1" fill="white" opacity="0.6" />
-                <circle cx="360" cy="28" r="1.5" fill="white" opacity="0.7" />
-                <circle cx="70" cy="45" r="1" fill="white" opacity="0.4" />
-                <circle cx="170" cy="50" r="1" fill="white" opacity="0.5" />
-                <circle cx="240" cy="38" r="1" fill="white" opacity="0.4" />
-                <circle cx="300" cy="55" r="1" fill="white" opacity="0.5" />
-                <!-- Milky way band -->
-                <path
-                  d="M0,80 Q95,40 190,70 Q285,100 380,50"
-                  fill="none"
-                  stroke="rgba(200,220,255,0.06)"
-                  stroke-width="30"
-                />
-                <!-- Southern Cross -->
-                <circle cx="310" cy="35" r="2" fill="white" opacity="0.9" />
-                <circle cx="320" cy="50" r="2" fill="white" opacity="0.9" />
-                <circle cx="300" cy="52" r="2" fill="white" opacity="0.9" />
-                <circle cx="325" cy="30" r="1.5" fill="white" opacity="0.7" />
-                <circle cx="298" cy="38" r="1.5" fill="white" opacity="0.7" />
-                <!-- Mountains Mitre Peak -->
-                <polygon points="160,60 60,200 260,200" fill="url(#nzmtn)" />
-                <polygon
-                  points="160,60 120,200 200,200"
-                  fill="rgba(200,220,240,0.15)"
-                />
-                <!-- Snow cap -->
-                <polygon
-                  points="160,60 144,95 176,95"
-                  fill="rgba(240,248,255,0.6)"
-                />
-                <!-- Secondary mountains -->
-                <polygon points="280,90 200,200 360,200" fill="url(#nzmtn2)" />
-                <polygon points="50,110 0,200 130,200" fill="url(#nzmtn2)" />
-                <polygon
-                  points="330,100 280,200 380,200"
-                  fill="rgba(20,50,80,0.8)"
-                />
-                <!-- Fjord water -->
-                <rect x="0" y="200" width="380" height="80" fill="#08182e" />
-                <!-- Water reflection of mountains -->
-                <polygon
-                  points="160,200 60,280 260,280"
-                  fill="rgba(90,120,160,0.15)"
-                />
-                <polygon
-                  points="280,200 200,280 360,280"
-                  fill="rgba(60,90,120,0.1)"
-                />
-                <!-- Reflection ripples -->
-                <ellipse
-                  cx="160"
-                  cy="220"
-                  rx="60"
-                  ry="5"
-                  fill="rgba(200,220,240,0.08)"
-                />
-                <ellipse
-                  cx="160"
-                  cy="235"
-                  rx="40"
-                  ry="3"
-                  fill="rgba(200,220,240,0.06)"
-                />
-                <!-- Greenery at base -->
-                <ellipse cx="55" cy="202" rx="30" ry="8" fill="#0a1e0a" />
-                <ellipse cx="310" cy="202" rx="25" ry="7" fill="#0a1e0a" />
-                <!-- Small boat -->
-                <ellipse
-                  cx="200"
-                  cy="225"
-                  rx="16"
-                  ry="4"
-                  fill="rgba(255,255,255,0.15)"
-                />
-                <rect
-                  x="197"
-                  y="221"
-                  width="6"
-                  height="8"
-                  fill="rgba(255,255,255,0.1)"
-                />
-              </svg>
+              class="dest-card dt-5 fade-up">
+             
               <div class="dest-overlay"></div>
               <div class="dest-overlay-top"></div>
               <div class="dest-hover-info">
@@ -2891,7 +711,7 @@
                 <span class="dest-hover-btn">Explore NZ →</span>
               </div>
               <div class="dest-info">
-                <span class="dest-flag">🇳🇿</span>
+                <span class="dest-flag"></span>
                 <h3>New Zealand</h3>
                 <p>20+ Partner Universities</p>
               </div>
@@ -3702,8 +1522,7 @@
                     <option>Study Abroad Counselling</option>
                     <option>Visa Assistance</option>
                     <option>Scholarship Guidance</option>
-                    <option>IELTS Coaching</option>
-                    <option>SOP / LOR Writing</option>
+                    <option>One to one counselling session</option>
                     <option>Admission Guidance</option>
                     <option>General Enquiry</option>
                   </select>
@@ -3853,18 +1672,24 @@
             <div class="footer-col">
               <h4>Services</h4>
               <ul>
-                <li><a href="abroad.html">Study MBBS Programs in India </a></li>
-                <!-- <li><a href="visa.html">Visa Assistance</a></li> -->
-                <!-- <li><a href="admission.html">Admission Guidance</a></li> -->
-                <!-- <li><a href="scholarship.html">Scholarship Support</a></li> -->
-                <!-- <li><a href="ielts.html">IELTS Coaching</a></li> -->
-                <!-- <li><a href="sop.html">SOP Writing</a></li> -->
-                <!-- <li><a href="#">Career Counselling</a></li> -->
+                <li><a href="mba-business.html">MBA & Business Programs</a></li>
+                <li><a href="computerscience.html">Computer Science Programs</a></li>
+                <li><a href="Engineering.html">Engineering Programs</a></li>
+                <li><a href="scholarship.html">Scholarship Support</a></li>
+                <li><a href="helthcare.html">Healthcare & Nursing Programs</a></li>
+                <li><a href="law.html">Law Programs</a></li>
+                <li><a href="creative.html">Creative Arts Programs</a></li>
               </ul>
             </div>
             <div class="footer-col">
               <h4>Destinations</h4>
               <ul>
+                <li>
+                  <a href="abroad.html">India</a>
+                </li>
+                <li>
+                  <a href="#">Bangladesh</a>
+                </li>
                 <li>
                   <a href="uk.html">Uzbekistan</a>
                 </li>
@@ -4027,12 +1852,12 @@
           />
           <select class="popup-input" id="pDest" style="cursor: pointer">
             <option value="">Target Country (Optional)</option>
-            <option>United Kingdom</option>
-            <option>Canada</option>
-            <option>Australia</option>
-            <option>United States</option>
-            <option>Germany</option>
-            <option>New Zealand</option>
+            <option>India</option>
+            <option>Bangladesh</option>
+            <option>Uzbekistan</option>
+            <option>Kazakhstan</option>
+            <option>Georgia</option>
+            <option>Egypt</option>
             <option>Other</option>
           </select>
           <button class="popup-submit-btn" onclick="submitPopup()">
