@@ -2790,7 +2790,7 @@ button.btn-gold-1 {
 }
 
 #mainContent {
-  margin-top: 100px; /* navbar height ke hisaab se adjust kar lena */
+  margin-top: 100px; 
 }
 .info-grid {
   display: grid;
@@ -4120,6 +4120,287 @@ tbody tr:hover {
   color: white;
 }
 
+/* undergradaute */
 
+/* Section */
+.medical-section {
+  padding: 100px 20px;
+  background: #f4f9ff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.medical-section h2 {
+  font-size: 32px;
+  color: #0a2a66;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+/* Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+
+  align-items: stretch; /* 🔥 CHANGE (equal height) */
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border-top: 5px solid #0a2a66;
+  transition: 0.3s ease;
+  text-align: left;
+
+  height: 100%; /* 🔥 IMPORTANT */
+  display: flex;
+  flex-direction: column;
+}
+/* Hover */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.card h3 {
+  color: #0a2a66;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+/* Content */
+.card p {
+  font-size: 14px;
+  color: #444;
+  margin: 6px 0;
+  position: relative;
+  padding-left: 16px;
+}
+
+/* Yellow bullet */
+.card p::before {
+  content: "•";
+  color: #ffcc00;
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .medical-section h2 {
+    font-size: 26px;
+  }
+}
+
+
+
+/* Section */
+.ug-section {
+  padding: 120px 20px;
+  background: #f4f9ff;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0a2a66;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #ffcc00;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Grid */
+.ug-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* Card */
+.ug-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-top: 5px solid #0a2a66;
+  transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+.ug-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Title */
+.ug-card h3 {
+  color: #0a2a66;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* List */
+.ug-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ug-card ul li {
+  padding: 8px 0;
+  font-size: 14px;
+  color: #444;
+  padding-left: 18px;
+  position: relative;
+}
+
+/* Yellow check */
+.ug-card ul li::before {
+  content: "✔";
+  color: #ffcc00;
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+}
+
+/* Yellow glow */
+.ug-card::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 204, 0, 0.2);
+  top: -40px;
+  right: -40px;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 26px;
+  }
+}
+
+
+/* Career Intro */
+.career-intro {
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.career-intro p {
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* Highlight Box */
+.career-highlight {
+  margin-top: 40px;
+  background: #0a2a66;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.career-highlight::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 204, 0, 0.2);
+  top: -50px;
+  right: -50px;
+  border-radius: 50%;
+}
+
+.career-highlight p {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* CTA */
+.career-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.career-cta h3 {
+  color: #0a2a66;
+  margin-bottom: 10px;
+}
+
+.career-cta p {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.btn-primary {
+  background: #ffcc00;
+  color: #0a2a66;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #0a2a66;
+  color: #fff;
+}
+
+
+.career-intro {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.career-intro p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.career-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-primary {
+  background: #ffcc00;
+  color: #0a2a66;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
 
 
